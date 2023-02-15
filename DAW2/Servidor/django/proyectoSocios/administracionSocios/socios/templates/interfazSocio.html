@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Interfaz Socio</title>
+    </head>
+    <body>
+        <h1>Socios</h1>
+
+        <table border="1">
+            {% for x in listaSocios %}
+            <tr>
+                <td><a href="modifica/{{ x.id }}">{{ x.id }}</a></td>
+                <td>{{ x.nombre }}</td>
+                <td>{{ x.apellidos }}</td>
+                <td><a href="borrar/{{ x.id }}">Borrar</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+        <p>
+            <a href="nuevo/">Añadir Socio</a>
+        </p>
+    </body>
+</html>

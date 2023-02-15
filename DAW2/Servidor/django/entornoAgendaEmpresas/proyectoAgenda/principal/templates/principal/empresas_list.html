@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Proyecto Agenda - Listado</title>
+    </head>
+    <body>
+        <a href="{% url 'crear' %}">Crear empresa</a>
+        <h1>Listado de empresas</h1>
+        {{empresas_list}}
+        {% for e in empresas_list %}
+            <ul>
+                <li><a href="{% url 'detalle' e.id %}">{{e.nombre}}</a></li>
+                <li>{{e.tipo}}</li>
+            </ul>
+            <hr>
+        {% endfor %}
+    </body>
+</html>

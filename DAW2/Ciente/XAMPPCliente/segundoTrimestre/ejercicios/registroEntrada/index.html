@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registro</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>REGISTRO HOSPITAL</h1>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required />
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" required />
+            <label for="dni">DNI</label>
+            <input type="text" name="dni" id="dni" required />
+            <label for="contacto">Persona de contacto</label>
+            <input type="text" name="contacto" id="contacto" required />
+            <button type="button" onclick="registrar()" class="button">Registrar</button>
+            <button type="button" onclick="limpiar()" class="button">Limpiar</button>
+            <button type="button" onclick="nuevoDia()" class="button">Nuevo día</button>
+        </div>
+        <main class="contenedor">
+            <div class="entradas">
+                <h1>ENTRADAS</h1>
+                <div class="navegador">
+                    <label for="dniBuscar">Buscar por DNI</label>
+                    <input type="text" name="dniBuscar" id="dniBuscar" />
+                    <button type="button" onclick="buscarDni()">B</button>
+                    <label for="apellidosBuscar">Buscar por Apellidos</label>
+                    <input type="text" name="apellidosBuscar" id="apellidosBuscar" />
+                    <button type="button" onclick="buscarApellidosEntrada()">B</button>
+                </div>
+                <table border="1" id="datosEntrada">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>DNI</th>
+                        <th>Contacto</th>
+                        <th>Fecha Entrada</th>
+                        <th>Salida</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="salidas">
+                <h1>SALIDAS</h1>
+                <div class="navegador">
+                    <label for="dniBuscarSalida">Buscar por DNI</label>
+                    <input type="text" name="dniBuscarSalida" id="dniBuscarSalida" />
+                    <button type="button" onclick="buscarDniSalida()">B</button>
+                    <label for="apellidosBuscarSalida">Buscar por Apellidos</label>
+                    <input type="text" name="apellidosBuscarSalida" id="apellidosBuscarSalida" />
+                    <button type="button" onclick="buscarApellidosSalida()">B</button>
+                </div>
+                <table border="1" id="datosSalida">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>DNI</th>
+                        <th>Contacto</th>
+                        <th>Fecha Entrada</th>
+                        <th>Fecha Salida</th>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </body>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="js/js.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+</html>

@@ -1,0 +1,10 @@
+{# esto es un comentario #}
+{% extends "recetario/base.html" %}
+
+{% block contenido %}
+    {{receta.nombre}}<br/>
+    {{receta.subnombre}}<br/>
+    {{receta.ingredientes|upper|linebreaks}}<br/>
+    {{receta.receta|linebreaks}}<br/>
+    {{receta.created|date:"SHORT_DATE_FORMAT"}}<br/>
+{% endblock %}

@@ -1,0 +1,19 @@
+a)
+
+ALTER TABLE profesor ADD telefono CHAR(9);
+
+b)
+
+ALTER TABLE profesor MODIFY telefono UNIQUE;
+
+c)
+
+ALTER TABLE profesor MODIFY apellido1 VARCHAR2(21);
+
+d)
+
+ALTER TABLE imparte RENAME TO imparteclase;
+
+e)
+
+ALTER TABLE imparteclase ADD PRIMARY KEY(id_asignatura, dni_profesor);

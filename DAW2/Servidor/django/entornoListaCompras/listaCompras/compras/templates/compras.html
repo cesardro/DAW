@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Compras</title>
+    </head>
+    <body>
+        <h1>Lista de Tareas</h1>
+        <form action="nuevo" method="get">
+            <label for="producto">Nueva compra:</label>
+            <input type="text" name="producto" id="producto" required />
+            <br /><br />
+            <label for="cantidad">Cantidad:</label>
+            <input type="text" name="cantidad" id="cantidad" required />
+            <br /><br />
+            <label for="unidad">Unidad:</label>
+            <input type="text" name="unidad" id="unidad" required />
+            <br /><br />
+            <button type="submit">Crear</button>
+        </form>
+        <hr />
+        <ul>
+            {% for c in compras %} {% if c.comprada %}
+            <li><del>{{c.cantidad}} - {{c.unidad}} - {{c.producto}} </del><a href="anadir/{{c.id}}">Añadir</a></li>
+            {% else %}
+            <li>{{c.cantidad}} - {{c.unidad}} - {{c.producto}} <a href="comprado/{{c.id}}">Comprado</a></li>
+            {% endif %} {% endfor %}
+        </ul>
+    </body>
+</html>

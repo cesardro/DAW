@@ -1,0 +1,58 @@
+* {
+    background-color: #EFD6AC;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+form {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+input,
+textarea {
+    border: black solid 1px;
+    resize: none;
+}
+
+::placeholder {
+    color: #183A37;
+    opacity: 1;
+}
+
+hr {
+    border: 2px solid #C44900;
+}
+
+textarea,
+input,
+select {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #999;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+.boton:link,
+.boton:visited {
+    margin-top: 20px;
+    background-color: #183A37;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}

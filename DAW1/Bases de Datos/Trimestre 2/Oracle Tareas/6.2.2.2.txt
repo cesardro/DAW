@@ -1,0 +1,14 @@
+SELECT CONCAT(CONCAT(apellido, ' ES '), oficio) "Informacion" FROM emple
+
+SELECT CONCAT(LOWER((SUBSTR(apellido, 1, 1))),SUBSTR(apellido, 2, 20)) "Apellido" FROM emple
+
+SELECT ADD_MONTHS(TRUNC(fecha_alt), 12 * 3 * -1) FROM emple
+
+SELECT 'Hoy es ' || TO_CHAR(SYSDATE, 'Day', 'NLS_DATE_LANGUAGE = Spanish') 
+|| ', ' || TO_CHAR(SYSDATE, 'DD/MM') || ' de ' 
+|| TO_CHAR(SYSDATE, 'Month', 'NLS_DATE_LANGUAGE = Spanish') 
+|| ' de ' || TO_CHAR(SYSDATE, 'YYYY') "Día" FROM emple 
+
+SELECT TO_CHAR(salario, 'fmL99G999D00', 'NLS_NUMERIC_CHARACTERS = '',.''NLS_CURRENCY = ''€''NLS_ISO_CURRENCY = Spain') "Salario" FROM emple
+
+SELECT REPLACE(REPLACE(tema, 'DIBUJO', 'DISEÑO'), 'LABORES', 'HOGAR') "Tema" from libreria

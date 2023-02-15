@@ -1,0 +1,20 @@
+*{
+  font-family: Arial;
+}
+
+h1.t1{
+  font-family: Verdana;
+  font-size: 48px;
+  color: green;
+}
+
+h1.t2{
+  font-family: Verdana;
+  font-size: 48px;
+  color: orange;
+}
+
+span{
+  font-weight: bold;
+  color: blue;
+}

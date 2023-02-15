@@ -1,0 +1,11 @@
+1. Tratamiendo de ficheros. 3
+Abrir fichero, tratas la información, guardar fichero o en otro fichero, cerramos.
+Fichero Origen - Tratarlo - Fichero Destino (Guardarlo)
+
+2. Construir un interfaz. 3
+Construir una interfaz SIN scene builder.
+
+3. Scene Builder. 3
+Diseñar una aplicación.
+
+3. Canvas. 1

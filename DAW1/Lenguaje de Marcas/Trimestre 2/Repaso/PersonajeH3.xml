@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE personajeHistorico SYSTEM "repasolm4.dtd">-->
+<personajeHistorico xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="repasolm4.xsd">
+  <nombre>Linus Torvalds</nombre>
+  <imagen>linus.jpg</imagen>
+  <datosPersonales>
+    <nacimiento>28 de diciembre de 1969 (edad 52 años), Helsinki, Finlandia</nacimiento>
+
+    <ocupaciones>
+     <ocupacion>Ingeniero de software</ocupacion>
+    </ocupaciones>
+    <descripcion>Linus Benedict Torvalds es un ingeniero de software finlandés-estadounidense, ​ conocido por iniciar y mantener el desarrollo del kernel Linux, basándose en el sistema operativo libre Minix creado por Andrew S. Tanenbaum y en algunas herramientas, varias utilidades y los compiladores desarrollados por el proyecto GNU. </descripcion>
+  </datosPersonales>
+  <enlace>https://es.wikipedia.org/wiki/Linus_Torvalds</enlace>
+</personajeHistorico>

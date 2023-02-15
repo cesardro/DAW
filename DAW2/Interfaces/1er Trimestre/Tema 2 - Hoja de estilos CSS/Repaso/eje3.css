@@ -1,0 +1,52 @@
+.pacman {
+    width: 20px;
+    position: absolute;
+    animation: seMueve 10s infinite;
+}
+
+@keyframes seMueve {
+    0% {
+        top: 128px;
+        left: 150px;
+    }
+    10% {
+        top: 128px;
+        left: 200px;
+    }
+    20% {
+        top: 175px;
+        left: 200px;
+    }
+    30% {
+        top: 175px;
+        left: 135px;
+    }
+    40% {
+        top: 153px;
+        left: 135px;
+    }
+    50% {
+        top: 210px;
+        left: 135px;
+    }
+    60% {
+        top: 210px;
+        left: 200px;
+    }
+    70% {
+        top: 435px;
+        left: 200px;
+    }
+    80% {
+        top: 435px;
+        left: 163px;
+    }
+    90% {
+        top: 398px;
+        left: 163px;
+    }
+    100% {
+        top: 398px;
+        left: 135px;
+    }
+}

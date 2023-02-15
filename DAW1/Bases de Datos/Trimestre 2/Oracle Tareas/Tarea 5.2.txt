@@ -1,0 +1,75 @@
+CREATE TABLE empleados (
+numemp NUMBER PRIMARY KEY,
+nombre VARCHAR2(30) NOT NULL,
+edad NUMBER,
+oficina NUMBER, 
+titulo CHAR(20),
+contrato VARCHAR(20) NOT NULL,
+director NUMBER,
+cuota NUMBER,
+ventas NUMBER);
+
+CREATE TABLE oficinas (
+oficina NUMBER PRIMARY KEY,
+ciudad VARCHAR2(30),
+region VARCHAR2(20),
+dir NUMBER,
+objetivo NUMBER,
+ventas NUMBER,
+FOREIGN KEY (dir) REFERENCES empleados(numemp));
+
+CREATE TABLE productos (
+idfab CHAR(10),
+idproducto CHAR(20),
+descripcion VARCHAR2(30) NOT NULL,
+precio NUMBER NOT NULL,
+existencias NUMBER,
+CONSTRAINT cp PRIMARY KEY (idfab, idproducto) );
+
+CREATE TABLE clientes (
+numclie NUMBER PRIMARY KEY,
+nombre VARCHAR2(30) NOT NULL,
+repclie NUMBER,
+FOREIGN KEY (repclie) REFERENCES empleados(numemp)) ;
+
+CREATE TABLE pedidos (
+codigo NUMBER,
+numpedido NUMBER PRIMARY KEY,
+fechapedido VARCHAR2(15) NOT NULL,
+clie NUMBER NOT NULL,
+rep NUMBER NOT NULL,
+fab CHAR(10) NOT NULL,
+producto CHAR(20) NOT NULL,
+cant NUMBER NOT NULL,
+importe NUMBER NOT NULL,
+FOREIGN KEY (clie) REFERENCES clientes(numclie),
+FOREIGN KEY (rep) REFERENCES empleados(numemp),
+FOREIGN KEY (fab, producto) REFERENCES productos(idfab, idproducto) );
+
+INSERT INTO empleados VALUES(1, 'Perla Celaya', 25, 2, 'Ingeniería', 'Indefinido', 9, 200, 180);
+INSERT INTO empleados VALUES(2, 'Alexander Toro', 20, 1, 'DAW', 'Indefinido', 8, 150, 150);
+INSERT INTO empleados VALUES(3, 'Lucia Rodríguez', 23, 2, 'DAM', 'Tiempo Medio', 2, 100, 90);
+
+INSERT INTO oficinas VALUES(2, 'Madrid', 'Madrid', 1, 500, 345);
+INSERT INTO oficinas VALUES(3, 'Toledo', 'Castilla-LaMancha', 2, 300, 120);
+INSERT INTO oficinas VALUES(4, 'Barcelona', 'Cataluña', 3, 500, 345);
+
+INSERT INTO productos VALUES('Manolita', 'Papel', 'Es papel higiénico', 2, 1300);
+INSERT INTO productos VALUES('Pepito', 'Pepinillos', 'Pepinillos para hamburguesas', 3, 1000);
+INSERT INTO productos VALUES('Mentitas', 'Mentas', 'Mentas para el mal aliento', 1, 999);
+
+INSERT INTO clientes VALUES(1, 'Noelia Molero', 1);
+INSERT INTO clientes VALUES(2, 'Turi', 2);
+INSERT INTO clientes VALUES(3, 'Irati', 3);
+
+INSERT INTO pedidos VALUES(8320, 92, '10/02/2022', 1, 1, 'Manolita', 'Papel', 10, 20);
+INSERT INTO pedidos VALUES(0922, 90, '08/02/2022', 2, 2, 'Pepito', 'Pepinillos', 20, 60);
+INSERT INTO pedidos VALUES(3726, 24, '24/10/2021', 3, 3, 'Mentitas', 'Mentas', 80, 80);
+
+UPDATE productos SET precio=precio*1.05 WHERE idfab='Manolita';
+
+INSERT INTO oficinas VALUES(30, 'Madrid', 'Centro', 1, 100000, 765);
+
+UPDATE empleados SET oficina=3 WHERE oficina=2;
+
+DELETE FROM pedidos WHERE rep=2;

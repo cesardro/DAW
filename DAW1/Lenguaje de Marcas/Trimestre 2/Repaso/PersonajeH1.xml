@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE personajeHistorico SYSTEM "repasolm4.dtd">-->
+<personajeHistorico xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="repasolm4.xsd">
+  <nombre>Ada Lovelace</nombre>
+  <imagen>AdaLovelace.jpg</imagen>
+  <datosPersonales>
+    <nacimiento>10 de diciembre de 1815, Londres, Reino Unido</nacimiento>
+    <fallecimiento>27 de noviembre de 1852, Marylebone, Londres, Reino Unido</fallecimiento>
+    <ocupaciones>
+     <ocupacion>Matemática</ocupacion>
+     <ocupacion>Programadora</ocupacion>
+     <ocupacion>Informatica teorica</ocupacion>
+     <ocupacion>Poeta</ocupacion>
+     <ocupacion>Ingeniera</ocupacion>
+     <ocupacion>Traductora</ocupacion>
+     <ocupacion>Escritora</ocupacion>
+    </ocupaciones>
+    <descripcion>Augusta Ada King, condesa de Lovelace, registrada al nacer como Augusta Ada Byron y conocida habitualmente como Ada Lovelace, fue una matemática y escritora británica, célebre sobre todo por su trabajo acerca de la computadora mecánica de uso general de Charles Babbage, la denominada máquina analítica.</descripcion>
+
+  </datosPersonales>
+  <enlace>https://es.wikipedia.org/wiki/Ada_Lovelace</enlace>
+</personajeHistorico>

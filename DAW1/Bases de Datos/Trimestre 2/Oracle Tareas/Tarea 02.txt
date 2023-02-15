@@ -1,0 +1,11 @@
+CREATE TABLE pub(cod_pub varchar2(20) PRIMARY KEY NOT NULL, nombre varchar2(20) NOT NULL, licencia_fiscal varchar2(20) NOT NULL, domicilio varchar2(20), fecha_apertura DATE NOT NULL, horario varchar2(20) NOT NULL, cod_localidad NUMBER NOT NULL,  FOREIGN KEY (cod_localidad) REFERENCES localidad(cod_localidad), CHECK(horario in('HOR1','HOR2','HOR3')));
+
+CREATE TABLE titular(dni_titular varchar2(20) PRIMARY KEY NOT NULL, nombre varchar2(20) NOT NULL, domicilio varchar2(20), cod_pub varchar2(20) NOT NULL, FOREIGN KEY (cod_pub) REFERENCES pub(cod_pub));
+
+CREATE TABLE empleado(dni_empleado varchar2(20) PRIMARY KEY NOT NULL, nombre varchar2(20) NOT NULL, domicilio varchar2(20));
+
+CREATE TABLE existencias(cod_articulo varchar2(20) PRIMARY KEY NOT NULL, nombre varchar2(20) NOT NULL, cantidad NUMBER NOT NULL, precio NUMBER NOT NULL, cod_pub varchar2(20) NOT NULL, CHECK(precio > 0), FOREIGN KEY (cod_pub) REFERENCES pub(cod_pub));
+
+CREATE TABLE localidad(cod_localidad NUMBER PRIMARY KEY NOT NULL, nombre varchar2(20) NOT NULL);
+
+CREATE TABLE pub_empleado(funcion varchar2(20) PRIMARY KEY NOT NULL, cod_pub varchar2(20) NOT NULL, dni_empleado varchar2(20) NOT NULL, FOREIGN KEY (cod_pub) REFERENCES pub(cod_pub), FOREIGN KEY (dni_empleado) REFERENCES empleado(dni_empleado), check(funcion in('CAMARERO','SEGURIDAD','LIMPIEZA')));

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE cancion SYSTEM "repasolm2.dtd">-->
+<!--<?xml-stylesheet type="text/xsl" href="file:repasolm3.xsl"?>-->
+<cancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="repasolm3.xsd" duracion="4:47" anio="2008">
+  <titulo>Give it 2 me</titulo>
+  <compositores>
+    <compositor>
+      <nombres>Pharrell</nombres>
+      <apellidos>Williams</apellidos>
+    </compositor>
+  </compositores>
+  <productores>
+    <productor>
+      <nombres>Pharrell</nombres>
+      <apellidos>Williams</apellidos>
+    </productor>
+  </productores>
+  <sello>Warner Music Group</sello>
+  <artista>Madonna</artista>
+</cancion>

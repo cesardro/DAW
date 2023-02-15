@@ -1,0 +1,4 @@
+{% if request.user.is_authenticated %}
+    <a href = "{% url 'modificar' camion.id%}"><button>Actualizar</button></a>
+    <a href = "{% url 'borrar' camion.id%}"><button>Borrar</button></a>
+{% endif %}

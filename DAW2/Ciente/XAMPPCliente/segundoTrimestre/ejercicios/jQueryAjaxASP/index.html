@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AJAX - ASP - JQUERY</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="cuerpo">
+            <div class="contenedorFormulario">
+                <label for="equipoLocal">Equipo Local:</label>
+                <input type="text" id="equipoLocal" />
+                <label for="equipoVisitante">Equipo Visitante:</label>
+                <input type="text" id="equipoVisitante" />
+                <label for="golesLocal">Goles Local:</label>
+                <input type="number" id="golesLocal" />
+                <label for="golesVisitante">Goles Visitante:</label>
+                <input type="number" id="golesVisitante" />
+                <button id="btnER" class="botones">Insertar</button>
+                <button id="btnMR" class="botones" disabled>Modificar Resultado</button>
+                <button id="btnDL" class="botones" disabled>Borrar Resultado</button>
+                <button id="btnLF" class="botones">Limpiar Formulario</button>
+            </div>
+            <div class="contenedorTabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Equipo Local</th>
+                            <th>Equipo Visitante</th>
+                            <th>Goles Local</th>
+                            <th>Goles Visitante</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaCuerpo"></tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="js/principal.js"></script>
+</html>

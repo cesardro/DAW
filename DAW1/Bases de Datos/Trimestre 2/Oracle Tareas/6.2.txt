@@ -1,0 +1,11 @@
+SELECT customername, city FROM customer ORDER BY customername
+
+SELECT DISTINCT country FROM customer
+
+SELECT customername FROM customer WHERE country='Mexico'
+
+SELECT customername, contactname FROM customer WHERE country='Germany' AND city='Berlin'
+
+SELECT customername, contactname FROM customer WHERE NOT country='Germany'
+
+SELECT customername FROM customer WHERE customername LIKE 'An%'

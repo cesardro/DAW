@@ -1,0 +1,16 @@
+INSERT INTO customer VALUES(1, 'Alfreds Futterskite', 'Maria Anders', 'Obere Str. 57', 'Berlin', 12209, 'Germany');
+INSERT INTO customer VALUES(2, 'Ana Trujillo Emparedados y helados', 'Ana Trujillo', 'Avda. de la Constitución 2222', 'Mexico D.F.', 5021, 'Mexico');
+INSERT INTO customer VALUES(3, 'Antonio Moreno Taquería', 'Antonio Moreno', 'Mataderos 2312', 'Mexico D.F.', 5023, 'Mexico');
+INSERT INTO customer VALUES(4, 'Around the Horn', 'Thomas Hardy', '120 Hanover Sq.', 'London', 11234, 'UK');
+INSERT INTO customer VALUES(5, 'Berglunds Snabbköp', 'Christina Berglund', 'Berguvsvägen', 'Luleâ', 95822, 'Sweden');
+
+UPDATE customer SET Address='Carl Goerdeler Strabe' WHERE CustomerID=1;
+UPDATE customer SET PostalCode=60320 WHERE CustomerID=1;
+UPDATE customer SET City='Frankfurt' WHERE CustomerID=1;
+
+UPDATE customer SET ContactName='Amancio Ortega' WHERE CustomerID=2;
+UPDATE customer SET ContactName='Amancio Ortega' WHERE CustomerID=3;
+
+DELETE FROM customer WHERE CustomerID=5;
+
+select * from customer

@@ -1,0 +1,124 @@
+*{
+  font-family: Verdana;
+  margin: 0px;
+  font-size: 17px;
+}
+
+div.cabecera{
+  background-color: #DCEDC8;
+  height: 100px;
+}
+
+ul.ulcabecera{
+  padding-left: 300px;
+  padding-top: 40px;
+}
+
+li.licabecera{
+  border: 1px solid black;
+  background: lightgrey;
+  text-align: center;
+  padding: 5px;
+  display: inline;
+}
+
+a.acabecera{
+  text-decoration: none;
+  color: black;
+}
+
+li.licuerpo{
+  text-align: left;
+  border: 1px solid black;
+  background: lightgrey;
+  padding: 5px;
+  display: block;
+}
+
+a.acuerpo{
+  padding-left: 20px;
+  text-decoration: none;
+  color: black;
+  background: url(flecha_activa.png) no-repeat left;
+}
+
+div.cuerpo{
+  background-color: #43A047;
+}
+
+ul.ulcuerpoizq{
+  padding: 80px 80px 80px 50px;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#primeracol{
+  width: 20%;
+  text-align: center;
+}
+
+#segundacol{
+  width: 80%;
+  height: 120px;
+  background-color: #66BB6A;
+}
+
+#celdas{
+  border: solid orange 1px;
+}
+
+#bordepronunciadobot{
+  border: solid orange 1px;
+  border-bottom-width: medium;
+}
+
+#tablaceldas{
+  border: solid orange 1px;
+  margin: auto;
+  width: 40%;
+  text-align: center;
+  caption-side: bottom;
+  background-color: yellow;
+}
+
+caption{
+  font-style: italic;
+  font-weight: bold;
+}
+
+#formulario{
+  background-color: #1B5E20;
+  height: 300px;
+}
+
+#formularioprueba{
+  display: block;
+  color: white;
+  margin-left: 100px;
+  margin-right: 500px;
+}
+
+input{
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+select{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  display: block;
+}
+
+input:focus{
+  border: 4px red solid;
+}
+
+select:focus{
+  border: 4px red solid;
+}

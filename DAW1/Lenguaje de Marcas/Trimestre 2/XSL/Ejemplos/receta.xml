@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="file:/C:/Users/zx21student278/Desktop/receta.xsl"?>
+<receta>
+<nombre>Tortitas</nombre>
+  <ingredientes>
+    <ingrediente cantidad="150">Harina</ingrediente>  
+    <ingrediente cantidad="2">Huevos</ingrediente>  
+    <ingrediente cantidad="25">Azucar</ingrediente>  
+    <ingrediente cantidad="50">Mantequilla</ingrediente>  
+    <ingrediente cantidad="12">Levadura</ingrediente>  
+  </ingredientes>
+  <pasos>
+    <paso>En un bol mezclamos los ingredientes secos, la harina, levadura, azúcar y sal. Reservamos.</paso>
+    <paso>Combinamos en otro bol los huevos batidos, la mantequilla derretida y la esencia de vainilla. Incorporamos los ingredientes secos y, con una varilla incorporamos a los líquidos.</paso>
+    <paso>Vertemos la leche y batimos, es muy importante que no batamos demasiado la mezcla. Se trata de integrarlos pero no es necesario intentar eliminar todos los grumos. Si lo batimos en exceso los pancakes nos quedarán demasiado duros.</paso>
+    <paso>Calentamos una sartén (debe ser aquella que tengamos para que no se pegue las cosas, la de las tortillas o cosas a la plancha). </paso>
+    <paso>Cuando esté caliente añadimos un cucharón de la mezcla de las tortitas, comenzando a verterlo por el centro y dejando que sea la propia masa la que se redistribuya en la sartén. Es importante que regulemos la temperatura hacia arriba o hacia abajo durante todo el proceso.</paso>
+    <paso>Si la masa no se cuaja al añadirla a la sartén estará demasiado fría y si, por el contrario la parte inferior se quema antes de que aparezcan burbujitas en la parte superior, estará demasiado caliente.</paso>
+    <paso>Cuando vemos que aparecen burbujas en la parte superior del pancake o tortita es el momento de darle la vuelta con una espátula. Cocinamos el pancake por el otro lado durante 30 o 40 segundos  y retiramos.</paso>
+    <paso>Podemos añadir a la masa una vez que la vertemos en la sartén algún tipo de frutas frescas, arándanos, frambuesas, serán perfectas como acompañamiento.</paso>
+    <paso>Servimos las tortitas unos encima de otros haciendo una torre, bañados con miel, una merienda de rechupete. Como alternativa podemos sustituir la miel por crema de cacao casera o aquella que más os guste, ¡buenísimas! Incluso pueden ir con un toque de fruta… arándanos, plátano, fresas, cerezas o frambuesas, por ejemplo.</paso>
+  </pasos>
+</receta>

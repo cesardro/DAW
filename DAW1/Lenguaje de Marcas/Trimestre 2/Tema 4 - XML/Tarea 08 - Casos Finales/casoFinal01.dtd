@@ -1,0 +1,9 @@
+<!ELEMENT registro_temperatura (provincia, fecha, temperatura_minima, temperatura_maxima, incidencias)>
+<!ELEMENT provincia (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT temperatura_minima (#PCDATA)>
+<!ELEMENT temperatura_maxima (#PCDATA)>
+<!ELEMENT incidencias (incidencia+)>
+<!ELEMENT incidencia (nombre, severidad)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT severidad (#PCDATA)>

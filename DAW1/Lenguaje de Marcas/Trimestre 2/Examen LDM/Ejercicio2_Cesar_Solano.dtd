@@ -1,0 +1,22 @@
+<!ELEMENT hogwarts ((casas, magos) | (magos,casas))>
+<!ATTLIST hogwarts
+          enlace CDATA #IMPLIED
+          firma CDATA #REQUIRED>
+<!ELEMENT casas (casa+)>
+<!ELEMENT casa (#PCDATA)>
+<!ATTLIST casa
+          escudo CDATA #REQUIRED>
+<!ELEMENT magos (mago+)>
+<!ELEMENT mago (nombre, nacimiento?, (caracteristicasFisicas+)?, caracteristicasMagicas)>
+<!ATTLIST mago
+          casa (1 | 2 | 3 | 4) #REQUIRED
+          mote CDATA #IMPLIED
+          ocupacion (profesor | alumno) #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT nacimiento (#PCDATA)>
+<!ELEMENT caracteristicasFisicas (pelo?, ojos?)>
+<!ELEMENT pelo (#PCDATA)>
+<!ELEMENT ojos (#PCDATA)>
+<!ELEMENT caracteristicasMagicas (patronus, varita*)>
+<!ELEMENT patronus (#PCDATA)>
+<!ELEMENT varita (#PCDATA)>

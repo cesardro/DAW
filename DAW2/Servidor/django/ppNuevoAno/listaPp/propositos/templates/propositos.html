@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{% static 'style.css' %}" />
+        <title>Propositos</title>
+    </head>
+    <body>
+        <div class="cabecera">
+            <h1>Lista de propositos</h1>
+            <form action="nuevo" method="get">
+                <label for="proposito">Proposito:</label>
+                <input type="text" name="proposito" id="proposito" required />
+                <br /><br />
+                <label for="fechaObjetivo">Fecha objetivo:</label>
+                <input type="date" name="fechaObjetivo" id="fechaObjetivo" required />
+                <br /><br />
+                <button type="submit">Crear</button>
+            </form>
+        </div>
+        <hr />
+        <ul>
+            {% for c in propositos %} {% if c.conseguido %}
+            <li class="close">
+                <a href="borrar/{{c.id}}"><button>Borrar</button></a>
+                <del>{{c.proposito}} - {{c.fechaObjetivo}}</del> Fecha conseguido: {{c.fechaConseguido}}
+                <a href="resetear/{{c.id}}"><button>Resetear</button></a>
+            </li>
+            <hr />
+            {% else %}
+            <li class="open">
+                {% if fechaActual > c.fechaObjetivo %}
+                <a href="borrar/{{c.id}}"><button>Borrar</button></a>
+                <span style="color: red">RETRASO // {{c.proposito}} - {{c.fechaObjetivo}}</span>
+                <a href="conseguido/{{c.id}}"><button>Conseguido</button></a
+                ><a href="mover/{{c.id}}"><button>Mover fecha</button></a
+                ><a href="modProp/{{c.id}}"><button>Modificar proposito</button></a>
+
+                {% else %}
+
+                <a href="borrar/{{c.id}}"><button>Borrar</button></a>
+                {{c.proposito}} - {{c.fechaObjetivo}}<a href="conseguido/{{c.id}}"><button>Conseguido</button></a
+                ><a href="mover/{{c.id}}"><button>Mover fecha</button></a
+                ><a href="modProp/{{c.id}}"><button>Modificar proposito</button></a>
+                {% endif %}
+            </li>
+            <hr />
+            {% endif %} {% endfor %}
+        </ul>
+    </body>
+</html>

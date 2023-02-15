@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empleados SYSTEM "Ejercicio02-Simulacro.dtd">
+<empleados>
+  <persona genero="hombre" >
+    <nombre>Juan Jiménez</nombre>
+    <nacimiento>
+      <dia>09</dia>
+      <mes>febrero</mes>
+      <año>1992</año>
+    </nacimiento>
+    <direccion cp="28001">
+      <calle>c/ Amatista</calle>
+      <provincia>Madrid</provincia>
+    </direccion>
+  </persona>
+  <persona genero="mujer">
+    <nombre>María Fernández</nombre>
+    <nacimiento>
+      <dia>01</dia>
+      <mes>junio</mes>
+      <año>1975</año>
+    </nacimiento>
+    <direccion cp="28731">
+      <calle>c/ Acacia</calle>
+      <provincia>Madrid</provincia>
+    </direccion>
+  </persona>
+  <persona genero="noBinario">
+    <nombre>Logan Rio</nombre>
+    <direccion cp="28003">
+      <calle>c/ Huerta</calle>
+      <provincia>Madrid</provincia>
+    </direccion>
+    <direccion cp="45006">
+      <calle>c/ Asturias</calle>
+      <provincia>Toledo</provincia>
+    </direccion>
+  </persona>
+</empleados>

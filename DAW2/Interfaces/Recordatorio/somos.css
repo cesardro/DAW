@@ -1,0 +1,52 @@
+* {
+    background-color: #EFD6AC;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+li {
+    list-style-type:circle;
+    list-style-position: inside;
+}
+
+h1{
+    text-align: center;
+}
+
+.cuerpo{
+    text-align: center;
+}
+
+.atras:link,
+.atras:visited {
+    background-color: #183A37;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+table.piedepagina{
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+div.pie{
+    margin-top: 50px;
+    border: solid;
+    border-color: #204542;
+    height: 225px;
+    text-align: center;
+  }
+
+  #piedepaginatitulo{
+    width: 33%;
+    text-align: center;
+    text-decoration: underline black;
+    text-decoration-style: solid;
+  }
+  
+  #piedepagina{
+    text-align: center;
+  }

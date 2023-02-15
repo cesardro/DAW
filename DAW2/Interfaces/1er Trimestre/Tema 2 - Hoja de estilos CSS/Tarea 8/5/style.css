@@ -1,0 +1,9 @@
+span {
+    font-size: 40px;
+    font-weight: bold;
+    float: left;
+}
+
+div {
+    max-width: 300px;
+}

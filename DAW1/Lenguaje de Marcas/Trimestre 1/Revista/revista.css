@@ -1,0 +1,180 @@
+*{
+  background-color: #5DC1B9;
+  font-family: Roboto Condensed;
+}
+
+div.cabecera{
+  background-color: black;
+  color: #5DC1B9;
+  font-family: Roboto Condensed;
+  text-align: center;
+  padding: 3px;
+  font-size: 17px;
+}
+
+div.cabecera2{
+  background-color: #F5F295;
+  font-family: Roboto Condensed;
+  background-image: url(logo_200x200.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 70px;
+  border: black solid 2px;
+}
+
+#informacion{
+  background-color: #F5F295;
+  margin-left: 1350px;
+}
+
+#forum{
+  background-color: #F5F295;
+  margin-left: 100px;
+}
+
+#registro{
+  background-color: #F5F295;
+  margin-left: 135px;
+}
+
+#ingreso{
+  background-color: #F5F295;
+}
+
+h1{
+  margin-top: 20px;
+  text-align: center;
+  font-family: Roboto Condensed;
+  text-decoration: underline #F5F295;
+  text-decoration-style: dotted;
+}
+
+button{
+  margin-top: 15px;
+  border-radius: 10px;
+  border-style: solid;
+  text-align: center;
+  padding: 7px 5px;
+  display: inline-block;
+  background-color: #F5F295;
+  transition-duration: 2s;
+}
+
+button:hover{
+  background-color: #5DC1B9;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#queeselcbd{
+  font-family: Varela Round;
+  margin-left: 500px;
+  margin-right: 500px;
+  text-align: justify;
+}
+
+div.ultimasnoticias{
+  text-align: center;
+}
+
+table.tablanoticias{
+  width: 50%;
+  margin: auto;
+}
+
+#noticia{
+  text-align: center;
+  font-size: 5;
+  width: 70%;
+  background-color: #F5F295;
+  border-radius: 20%;
+}
+
+span.titulonoticia{
+  font-size: 25px;
+  text-align: left;
+  background: transparent;
+}
+
+span.descripcionnoticia{
+  font-size: 15px;
+  text-align: left;
+  font-family: Varela Round;
+  background: transparent;
+}
+
+#imagennoticia1{
+  background-image: url(https://www.projectcbd.org/sites/projectcbd/files/styles/article_medium/public/field/image/xhippocampus-sq.png,qitok=zjBCjiOf.pagespeed.ic.ZC8QY52LqI.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 200px;
+  background-position: center;
+  border-radius: 20%;
+}
+
+#imagennoticia2{
+  background-image: url(https://www.projectcbd.org/sites/projectcbd/files/styles/newsfeed/public/field/image/rubberband-ball-sq.png?itok=UreM7oBN);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 200px;
+  background-position: center;
+  border-radius: 20%;
+}
+
+#imagennoticia3{
+  background-repeat: no-repeat;
+  background-image: url(https://www.projectcbd.org/sites/projectcbd/files/styles/newsfeed/public/field/image/sad_lookingout_window_sq_0.png?itok=hKNSlWJA);
+  background-size: cover;
+  width: 30%;
+  height: 200px;
+  background-position: center;
+  border-radius: 20%;
+}
+
+#imagennoticia4{
+  background-repeat: no-repeat;
+  background-image: url(https://www.projectcbd.org/sites/projectcbd/files/styles/newsfeed/public/field/image/cbd-secrets_main.png?itok=Nv4GOT5T);
+  background-size: cover;
+  width: 30%;
+  height: 200px;
+  background-position: center;
+  border-radius: 20%;
+}
+
+table.piedepagina{
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  background-color: #A1C4C1;
+}
+
+#piedepaginatitulo{
+  background-color: #A1C4C1;
+  width: 33%;
+  text-align: center;
+  text-decoration: underline black;
+  text-decoration-style: solid;
+}
+
+#piedepagina{
+  background-color: #A1C4C1;
+  text-align: center;
+  font-family: Varela Round;
+}
+
+div.pie{
+  margin-top: 50px;
+  border: solid;
+  border-color: #204542;
+  height: 225px;
+  text-align: center;
+  background-color: #A1C4C1;
+}
+
+li{
+  margin-top: 10px;
+  background-color: #A1C4C1;
+  text-align: center;
+  font-family: Varela Round;
+}

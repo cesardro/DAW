@@ -1,0 +1,58 @@
+a)
+
+La creación correcta de las tablas seria: Plan Estudios, Profesor, Asignatura y por ultimo Imparte.
+
+b)
+
+CREATE TABLE plan_estudios (codigo NUMBER PRIMARY KEY NOT NULL, 
+                            fecha DATE NOT NULL);
+
+c)
+
+CREATE TABLE profesor (dni CHAR(9) PRIMARY KEY NOT NULL , 
+                       nombre VARCHAR2(20) NOT NULL, 
+                       apellido1 VARCHAR2(20) NOT NULL, 
+                       apellido2 VARCHAR2(20) NOT NULL, 
+                       direccion VARCHAR2(20));
+
+d)
+
+CREATE TABLE asignatura (id_asignatura NUMBER PRIMARY KEY NOT NULL, 
+                         nombre VARCHAR2(20) NOT NULL, 
+                         curso VARCHAR2(20) NOT NULL,
+                         codigo_plan_estudios NUMBER NOT NULL,
+                         coordinador_dni CHAR(9) NOT NULL,
+                         FOREIGN KEY (codigo_plan_estudios) REFERENCES plan_estudios(codigo),
+                         FOREIGN KEY (coordinador_dni) REFERENCES profesor(dni),
+                         CHECK(curso in('CURSO1', 'CURSO2', 'CURSO3')));
+
+e)
+
+CREATE TABLE imparte (id_asignatura NUMBER NOT NULL,
+                      dni_profesor CHAR(9) NOT NULL,
+                      PRIMARY KEY (id_asignatura, dni_profesor),
+                      FOREIGN KEY (id_asignatura) REFERENCES asignatura(id_asignatura),
+                      FOREIGN KEY (dni_profesor) REFERENCES profesor (dni));
+
+f)
+
+CREATE TABLE imparte (id_asignatura NUMBER NOT NULL,
+                      dni_profesor CHAR(9) NOT NULL,
+                      PRIMARY KEY (id_asignatura, dni_profesor),
+                      FOREIGN KEY (id_asignatura) REFERENCES asignatura(id_asignatura) ON DELETE SET NULL,
+                      FOREIGN KEY (dni_profesor) REFERENCES profesor (dni) ON DELETE CASCADE);
+
+g)
+
+Se debe comenzar a borrar por imparte -> asignatura -> profesor -> plan_estudios.
+La razón es porque imparte tiene dos foreign key de las tablas profesor y asignatura, asignatura
+tiene una foreign key de plan_estudios y profesor, por ultimo puede borrar profesor y plan_estudios sin 
+ningún orden. Esto se debe a que si intentas borrar profesor de primeras (por ejemplo), las otras tablas
+petarian al no tener a que referenciarse. 
+
+h)
+
+La integridad refencial es la forma de describir que las tablas esten referencidas entre si mismas
+a traves de claves foraneas (FK) de la forma correcta sin que haya problemas a la hora de ingresar datos 
+o borrar dichos datos. Dicho de otra forma hay que mantener las referencias entre tablas de la mejor y 
+más correcta forma.

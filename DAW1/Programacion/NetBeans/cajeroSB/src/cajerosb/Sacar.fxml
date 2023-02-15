@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" fx:id="principal" prefHeight="399.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="cajerosb.SacarController">
+   <children>
+      <Label fx:id="iban" layoutX="95.0" layoutY="116.0" prefHeight="40.0" prefWidth="411.0">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textField" layoutX="130.0" layoutY="200.0" prefHeight="25.0" prefWidth="341.0" />
+      <Button fx:id="btnAceptar" layoutX="172.0" layoutY="296.0" mnemonicParsing="false" onAction="#aceptar" text="Aceptar" />
+      <Button fx:id="btnCancelar" layoutX="379.0" layoutY="296.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+   </children>
+</AnchorPane>

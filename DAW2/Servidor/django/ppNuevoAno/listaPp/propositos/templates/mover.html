@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Propositos</title>
+    </head>
+    <body>
+        <h1>Moviendo fecha</h1>
+        <p>Estas moviendo de fecha el proposito: <span>{{mover.proposito}}</span></p>
+        <p>Fecha actual: <span>{{mover.fechaObjetivo}}</span></p>
+        <form action="modificar/{{mover.id}}" method="get">
+            <label for="numDias">Días a restar:</label>
+            <input type="number" name="numDias" id="numDias" required />
+            <br /><br />
+            <button type="submit">Modificar</button>
+        </form>
+        <a href="/"><button>Atrás</button></a>
+        <hr />
+    </body>
+</html>

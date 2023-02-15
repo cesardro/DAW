@@ -1,0 +1,11 @@
+SELECT nombre FROM jugadores ORDER BY nombre;
+
+SELECT codigo, nombre FROM jugadores WHERE peso>200 AND posicion LIKE '%C%' ORDER BY codigo asc;
+
+SELECT nombre FROM equipos ORDER BY nombre;
+
+SELECT nombre FROM equipos WHERE conferencia='East';
+
+SELECT nombre FROM equipos WHERE ciudad LIKE 'C%';
+
+SELECT COUNT(*), nombre_equipo FROM jugadores GROUP BY nombre_equipo;

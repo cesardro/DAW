@@ -1,0 +1,25 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3 feb. 2022, 12:17:35
+    Author     : zx21student278
+*/
+
+.root{
+    -fx-background-color:lightblue;
+}
+
+.label{
+    -fx-text-fill:#999999;
+}
+
+#errorLogin{
+    -fx-text-fill:red;
+}
+
+.fondo{
+    -fx-background-image:url("/imagenes/perrito.png");
+}

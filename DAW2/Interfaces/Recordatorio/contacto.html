@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="contacto.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <div>
+        <a href="index.html"><img src="logo.png"></a>
+        <h1>Contacta con nosotros</h1>
+    </div>
+    <hr>
+    <form>
+        <label>Nombre:</label>
+        <input type="text" name="nombre" placeholder="Introduce tu nombre">
+        <label>Descripción:</label>
+        <textarea name="descripcion" rows="5" cols="50" placeholder="Añade tu descripción aquí"></textarea>
+        <fieldset>
+            <legend>¿Quien soy?</legend>
+            <select required class="" name="seleccion comunidades">
+                <option value="" disabled selected hidden>Seleciona...</option>
+                <option value="">Profesor</option>
+                <option value="">Alumno</option>
+                <option value="">Interesado</option>
+            </select>
+            <p>Comunidad: <br></p>
+            <select class="" name="seleccion provincia" required>
+                <option value="" disale selected hidden>Selecciona...</option>
+                <option value="">Andalucía</option>
+                <option value="">Aragón</option>
+                <option value="">Asturias</option>
+                <option value="">Islas Baleares</option>
+                <option value="">Canarias</option>
+                <option value="">Cantabria</option>
+                <option value="">Castilla-La Mancha</option>
+                <option value="">Castilla y León</option>
+                <option value="">Cataluña</option>
+                <option value="">Comunidad Valenciana</option>
+                <option value="">Extremadura</option>
+                <option value="">Galicía</option>
+                <option value="">La Rioja</option>
+                <option value="">Comunidad de Madrid</option>
+                <option value="">Región de Murcia</option>
+                <option value="">Comunidad Foral de Navarra</option>
+                <option value="">País Vasco</option>
+                <option value="">Ceuta</option>
+                <option value="">Melilla</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <h1>Intereses: </h1>
+            <p>¿Con que frecuncia deseo recibir e-mails? <br> </p>
+            <input type="radio" name="frecuencia" value="">Ninguna
+            <input type="radio" name="frecuencia" value="">Poca
+            <input type="radio" name="frecuencia" value="">Regular
+            <input type="radio" name="frecuencia" value="">Frecuentada <br>
+            <br>
+            <p>¿Qué es lo que mas me interesa?</p>
+            <input type="checkbox" name="checkbox_estudios" value="">Estudios
+            <input type="checkbox" name="checkbox_datoscuriosos" value="">Datos curiosos
+            <input type="checkbox" name="checkbox_historia" value="">Historia <br>
+            <input type="checkbox" name="checkbox_leyesydemas" value="">Leyes y demás
+            <input type="checkbox" name="checkbox_otros" value="">Otros <br>
+          </fieldset>
+        <a href="index.html" class="boton">Enviar</a>
+        <a href="index.html" class="boton">Atrás</a>
+    </form>
+</body>
+
+</html>

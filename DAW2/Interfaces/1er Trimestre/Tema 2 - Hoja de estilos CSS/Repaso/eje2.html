@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ejercicio 2</title>
+        <link rel="stylesheet" href="eje2.css" />
+    </head>
+    <body>
+        <form class="formulario1">
+            <fieldset>
+                <h1>Heladería</h1>
+                <p>Añade un producto:</p>
+                <div class="categoria">
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="categoria">
+                        <option disabled selected>Seleccione categoría...</option>
+                        <option value="Ejemplo 1">Ejemplo 1</option>
+                        <option value="Ejemplo 2">Ejemplo 2</option>
+                        <option value="Ejemplo 3">Ejemplo 3</option>
+                        <option value="Ejemplo 4">Ejemplo 4</option>
+                    </select>
+                </div>
+                <div class="sabor">
+                    <label for="sabor">Sabor:</label>
+                    <input type="text" placeholder="Elige un sabor..." />
+                </div>
+                <div class="tamaño">
+                    <label>Tamaño</label>
+                    <div>
+                        <input type="radio" name="tamaño" id="grande" />
+                        <label for="grande">Grande</label>
+                        <input type="radio" name="tamaño" id="mediano" />
+                        <label for="mediano">Mediano</label>
+                        <input type="radio" name="tamaño" id="pequeño" />
+                        <label for="pequeño">Pequeño</label>
+                    </div>
+                </div>
+                <p>Selecciona un complemento:</p>
+                <div>
+                    <input type="checkbox" name="checkbox_chispas" />
+                    <label>Chispas de chocolate</label>
+                    <input type="checkbox" name="checkbox_sirope" />
+                    <label>Sirope</label>
+                    <input type="checkbox" name="checkbox_lacasitos" />
+                    <label>Lacasitos</label>
+                </div>
+                <div class="botonera">
+                    <button type="submit" class="fucsia">Enviar</button>
+                    <button type="reset" class="naranja">Borrar</button>
+                </div>
+            </fieldset>
+        </form>
+        <form class="formulario2">
+            <fieldset>
+                <h1>Heladería</h1>
+                <p>Añade un producto:</p>
+                <div class="categoria">
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="categoria">
+                        <option disabled selected>Seleccione categoría...</option>
+                        <option value="Ejemplo 1">Ejemplo 1</option>
+                        <option value="Ejemplo 2">Ejemplo 2</option>
+                        <option value="Ejemplo 3">Ejemplo 3</option>
+                        <option value="Ejemplo 4">Ejemplo 4</option>
+                    </select>
+                </div>
+                <div class="sabor">
+                    <label for="sabor">Sabor:</label>
+                    <input class="focus" type="text" placeholder="Elige un sabor..." />
+                </div>
+                <div class="tamaño">
+                    <label>Tamaño</label>
+                    <div>
+                        <input type="radio" name="tamaño" id="grande" />
+                        <label for="grande">Grande</label>
+                        <input type="radio" name="tamaño" id="mediano" />
+                        <label for="mediano">Mediano</label>
+                        <input type="radio" name="tamaño" id="pequeño" />
+                        <label for="pequeño">Pequeño</label>
+                    </div>
+                </div>
+                <p>Selecciona un complemento:</p>
+                <div>
+                    <input type="checkbox" name="checkbox_chispas" />
+                    <label>Chispas de chocolate</label>
+                    <input type="checkbox" name="checkbox_sirope" />
+                    <label>Sirope</label>
+                    <input type="checkbox" name="checkbox_lacasitos" />
+                    <label>Lacasitos</label>
+                </div>
+                <div class="botonera">
+                    <button type="submit" class="naranja">Enviar</button>
+                    <button type="reset" class="fucsia">Borrar</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

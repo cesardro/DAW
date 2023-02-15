@@ -1,0 +1,59 @@
+CREATE TABLE Caracteristicas (id_caracteristicas NUMBER(3) PRIMARY KEY NOT NULL,
+                              peso VARCHAR2(5) NOT NULL,
+                              altura VARCHAR2(5) NOT NULL,
+                              color VARCHAR2(10) NOT NULL,
+                              sexo VARCHAR2(10) NOT NULL);
+
+CREATE TABLE Generacion (id_generacion NUMBER(1) PRIMARY KEY NOT NULL)
+
+CREATE TABLE Region (id_region NUMBER(1) PRIMARY KEY NOT NULL,
+                     nombre_region VARCHAR2(20) NOT NULL,
+                     extension VARCHAR2(20) NOT NULL,
+                     id_generacion NUMBER(1) NOT NULL,
+                     CONSTRAINT id_generacion_fk FOREIGN KEY (id_generacion) REFERENCES Generacion(id_generacion));
+
+CREATE TABLE Entrenador (id_entrenador NUMBER(5) PRIMARY KEY NOT NULL,
+                         nombre VARCHAR2(20) NOT NULL,
+                         pokemon VARCHAR2(2) NOT NULL,
+                         num_pokemons NUMBER(1) NOT NULL,
+                         id_region NUMBER(1) NOT NULL,
+                         CONSTRAINT id_region_fk FOREIGN KEY (id_region) REFERENCES Region(id_region));
+
+CREATE TABLE Pokemon (num_pokedex NUMBER(3) PRIMARY KEY NOT NULL,
+                      tipo VARCHAR2(15) NOT NULL,
+                      naturaleza VARCHAR2(15) NOT NULL,
+                      id_generacion NUMBER(1) NOT NULL,
+                      id_entrenador NUMBER(5) NOT NULL,
+                      CONSTRAINT id_generacionPokemon_fk FOREIGN KEY (id_generacion) REFERENCES Generacion(id_generacion),
+                      CONSTRAINT id_entrenadorPokemon_fk FOREIGN KEY (id_entrenador) REFERENCES Entrenador(id_entrenador));
+
+CREATE TABLE Tiene (num_pokedex NUMBER(3) NOT NULL,
+                    num_evoluciones NUMBER(1) NOT NULL,
+                    CONSTRAINT num_pokedex_fk FOREIGN KEY (num_pokedex) REFERENCES Pokemon(num_pokedex));
+
+CREATE TABLE Cuenta (num_pokedex NUMBER(3) NOT NULL,
+                     id_caracteristicas NUMBER(3) NOT NULL,
+                     CONSTRAINT num_pokedexCuenta_fk FOREIGN KEY (num_pokedex) REFERENCES Pokemon(num_pokedex),
+                     CONSTRAINT id_caracteristicas_fk FOREIGN KEY (id_caracteristicas) REFERENCES Caracteristicas(id_caracteristicas));
+
+ALTER TABLE caracteristicas MODIFY peso VARCHAR(20)
+
+INSERT INTO Caracteristicas VALUES(001, '6.9Kg', '0.7m', 'Verde', 'F')
+INSERT INTO Caracteristicas VALUES(004, '8.5Kg', '0.6m', 'Rojo', 'F')
+INSERT INTO Caracteristicas VALUES(007, '9Kg', '0.5m', 'Azul', 'M')
+INSERT INTO Caracteristicas VALUES(387, '10.2Kg', '0.4m', 'Verde', 'F')
+INSERT INTO Caracteristicas VALUES(390, '6.2Kg', '0.5m', 'Marrón', 'M')
+INSERT INTO Caracteristicas VALUES(393, '5.2Kg', '0.4m', 'Aul', 'F')
+
+SELECT * FROM caracteristicas
+
+INSERT INTO generacion VALUES(1)
+INSERT INTO generacion VALUES(2)
+INSERT INTO generacion VALUES(3)
+INSERT INTO generacion VALUES(4)
+INSERT INTO generacion VALUES(5)
+INSERT INTO generacion VALUES(6)
+INSERT INTO generacion VALUES(7)
+INSERT INTO generacion VALUES(8)
+
+SELECT * FROM generacion

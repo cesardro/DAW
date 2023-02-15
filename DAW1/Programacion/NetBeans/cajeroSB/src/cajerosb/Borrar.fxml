@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" fx:id="principal" prefHeight="399.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="cajerosb.BorrarController">
+   <children>
+      <Label layoutX="95.0" layoutY="41.0" text="Borrado de cuenta bancaria.">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="115.0" prefHeight="23.0" prefWidth="281.0" text="Se dispone a borrar la cuenta con el siguiente IBAN:" />
+      <Label fx:id="labelIBAN" layoutX="307.0" layoutY="118.0" prefHeight="17.0" prefWidth="281.0" />
+      <Label layoutX="26.0" layoutY="138.0" text="y nombre:" />
+      <Label fx:id="labelNombre" layoutX="88.0" layoutY="138.0" prefHeight="17.0" prefWidth="217.0" />
+      <Label layoutX="26.0" layoutY="191.0" prefHeight="17.0" prefWidth="516.0" text="Por favor, corroborar los datos son correctos, una vez se borre la cuenta no se podrá recuperar." />
+      <Button fx:id="btnAceptar" layoutX="171.0" layoutY="270.0" mnemonicParsing="false" onAction="#aceptar" text="Aceptar" />
+      <Button fx:id="btnCancelar" layoutX="346.0" layoutY="270.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+   </children>
+</AnchorPane>

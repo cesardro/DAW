@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="cancion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="titulo" maxOccurs="1" minOccurs="1" type="xs:string"/>
+        <xs:element name="compositores" minOccurs="0">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="compositor" minOccurs="1">
+                    <xs:complexType>
+                      <xs:all>
+                        <xs:element name="nombres" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                        <xs:element name="apellidos" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                      </xs:all>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="productores" minOccurs="1">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="productor" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                      <xs:all>
+                        <xs:element name="nombres" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                        <xs:element name="apellidos" maxOccurs="1" minOccurs="0" type="xs:string"/>
+                      </xs:all>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element> 
+            <xs:element name="sello" minOccurs="0" maxOccurs="1">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="Sony Music Entertainment"/>
+                  <xs:enumeration value="Warner Music Group"/>
+                  <xs:enumeration value="Epic Records"/>
+                  <xs:enumeration value="Universal Music Group"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="artista" minOccurs="1" maxOccurs="1" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="anio" use="optional">
+        <xs:simpleType>
+          <xs:restriction base="xs:int">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="2022"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="duracion" use="required" type="xs:string">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

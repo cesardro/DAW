@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Proyecto Agenda - Listado</title>
+    </head>
+    <body>
+        <h1>Detalle de {{empresas.nombre}}</h1>
+        <p>{{empresas.tipo}}</p>
+        <p>{{empresas.direccion}}</p>
+        <p>{{empresas.telefono}}</p>
+        <p>{{empresas.personaContacto}}</p>
+        <p>{{empresas.created}}</p>
+        <p>{{empresas.updated}}</p>
+        <a href="{% url 'modificar' empresas.id %}">Actualizar</a>
+        <br>
+        <a href="{% url 'borrar' empresas.id %}">Borrar</a>
+    </body>
+</html>

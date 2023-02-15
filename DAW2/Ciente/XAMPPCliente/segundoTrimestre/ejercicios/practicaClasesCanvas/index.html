@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Practica Clases y CANVAS</title>
+        <script src="js/rectangulo.js"></script>
+        <script src="js/dbjCanvas.js"></script>
+        <script src="js/principal.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div>
+            <label for="alto">Alto:</label>
+            <input type="number" min="10" max="390" id="alto" onchange="dibuja()" value="390" /><br />
+            <label for="ancho">Ancho:</label>
+            <input type="number" min="10" max="390" id="ancho" onchange="dibuja()" value="390" /><br />
+            <canvas width="400" height="600" id="miCanvas" style="border: 1px solid black"></canvas>
+        </div>
+    </body>
+</html>

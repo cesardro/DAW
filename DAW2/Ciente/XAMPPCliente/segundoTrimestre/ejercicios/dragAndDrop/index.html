@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Drag & Drop</title>
+        <script src="js/dad.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="padre">
+            <div class="origen" ondragover="llego(event)" ondrop="solto(event)">
+                <div
+                    id="arrastrable"
+                    class="arrastrable"
+                    draggable="true"
+                    ondragstart="arrastrando(event)"
+                    ondragend="finArrastre(event)">
+                    Cosa 1
+                </div>
+                <div
+                    id="arrastrable1"
+                    class="arrastrable"
+                    draggable="true"
+                    ondragstart="arrastrando(event)"
+                    ondragend="finArrastre(event)">
+                    Cosa 2
+                </div>
+                <div
+                    id="arrastrable2"
+                    class="arrastrable"
+                    draggable="true"
+                    ondragstart="arrastrando(event)"
+                    ondragend="finArrastre(event)">
+                    Cosa 3
+                </div>
+            </div>
+            <div id="destino" class="destino" ondragover="llego(event)" ondrop="solto(event)">dropzone</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE personajeHistorico SYSTEM "repasolm4.dtd">-->
+<personajeHistorico xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="repasolm4.xsd">
+  <nombre>Douglas Engelbart</nombre>
+  <imagen>Douglas.jfif</imagen>
+  <datosPersonales>
+    <nacimiento>30 de enero de 1925, Portland, Oregón, Estados Unidos</nacimiento>
+    <fallecimiento>2 de julio de 2013, Atherton, California, Estados Unidos</fallecimiento>
+    <ocupaciones>
+     <ocupacion>informático</ocupacion>
+     <ocupacion>inventor</ocupacion>
+    </ocupaciones>
+    <descripcion>Douglas Carl Engelbart ​ fue un inventor estadounidense, descendiente de noruegos. Es conocido por inventar el ratón, ​ y fue un pionero de la interacción humana con las computadoras, incluyendo el hipertexto y las computadoras en red.​</descripcion>
+
+  </datosPersonales>
+  <enlace>https://es.wikipedia.org/wiki/Douglas_Engelbart</enlace>
+</personajeHistorico>

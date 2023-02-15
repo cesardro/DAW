@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="pedidos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="pedido" maxOccurs="unbounded">
+         <xs:complexType>
+            <xs:sequence>
+             <xs:choice>
+              <xs:element name="empresa" minOccurs="1"/>
+              <xs:element name="cliente" minOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="MOTE" maxOccurs="1"/>
+                 </xs:sequence>
+                 <xs:attribute name="NIF" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+             </xs:choice>
+              <xs:element name="productos" type="xs:string" maxOccurs="1"/>
+              <xs:element name="fecha" type="xs:string" maxOccurs="1"/>
+              <xs:element name="factura" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="emisor" type="xs:string" maxOccurs="1"/>
+                    <xs:element name="total" type="xs:int" maxOccurs="1"/>
+                    <xs:element name="fecha_fact" type="xs:string" maxOccurs="1"/>
+                  </xs:sequence>
+                  <xs:attribute name="numfactura" type="xs:string"/>
+                  <xs:attribute name="cliente_factura" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

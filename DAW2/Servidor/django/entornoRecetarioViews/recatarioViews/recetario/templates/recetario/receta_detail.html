@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Proyecto Agenda - Listado</title>
+    </head>
+    <body>
+        <h1>Detalle de {{receta.nombre}}</h1>
+        <p>{{receta.subnombre}}</p>
+        <p>{{receta.ingredientes}}</p>
+        <p>{{receta.receta}}</p>
+        <p>{{receta.created}}</p>
+        <p>{{receta.updated}}</p>
+        <p>{{receta.author}}</p>
+        <p>{{receta.imagen}}</p>
+        <p><img src="/media/{{receta.imagen}}" alt="Imagen"></p>
+        <h3>Categorias</h3>
+        {% for e in receta.categorias.all %}
+            <p><a href="{% url 'recetasEspecificas' e.nombre %}">{{e.nombre}}</a></s></p>
+            <hr>
+        {% endfor %}
+        {% include 'recetario/includes/receta_updatemodif.html' %}
+    </body>
+</html>

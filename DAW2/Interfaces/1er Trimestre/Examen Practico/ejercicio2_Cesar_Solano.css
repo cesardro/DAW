@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+/*===========IZQUIERDA===========*/
+
+.izquierda {
+    background-color: #abff65;
+    width: 600px;
+}
+
+form {
+    padding: 20px;
+}
+
+.datos {
+    margin-bottom: 10px;
+}
+
+label {
+    float: left;
+    width: 250px;
+}
+
+input,
+select {
+    width: 250px;
+}
+
+button {
+    float: right;
+    background-color: #eb8503;
+    color: #f7dd98;
+    clear: both;
+}
+
+/*===========DERECHA===========*/
+
+.derecha {
+    width: 750px;
+    background-color: #f7dd98;
+    text-align: justify;
+    position: absolute;
+    top: 5px;
+    left: 650px;
+}
+
+.contenedor {
+    margin: 20px;
+}
+
+.titulo {
+    color: #ff5900;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.subtitulo {
+    color: #eb8503;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.texto {
+    color: black;
+}
+
+img {
+    float: right;
+    width: 102px;
+    padding: 5px;
+}

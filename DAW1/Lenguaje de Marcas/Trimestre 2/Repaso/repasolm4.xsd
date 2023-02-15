@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="personajeHistorico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="imagen" type="xs:string"/>
+        <xs:element name="datosPersonales">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nacimiento" type="xs:string"/>
+              <xs:element name="fallecimiento" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="ocupaciones">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ocupacion" type="xs:string" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element> 
+              <xs:element name="descripcion" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="enlace" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

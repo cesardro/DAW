@@ -1,0 +1,10 @@
+.caja1, .caja3 {
+    background-color: salmon;
+}
+
+.caja2 {
+    background-color: yellow;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}

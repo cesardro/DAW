@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="file:superman.xsl"?>
+<pelicula>
+  <titulo>Superman: la película</titulo>
+  <imagen>https://media.revistagq.com/photos/6050e0cc267aa4eef01d2e77/4:3/w_1124,h_843,c_limit/henry-cavill-entrenamiento-superman.jpeg</imagen>
+  <argumento>Un extraterrestre con increibles poderes se dedica a salvar a  los habitantes del planeta Tierra</argumento>
+  <informacion>https://es.wikipedia.org/wiki/Clark_Kent_(Universo_extendido_de_DC)</informacion>
+</pelicula>

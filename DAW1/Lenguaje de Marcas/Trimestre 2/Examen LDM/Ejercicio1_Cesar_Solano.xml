@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE hogwarts SYSTEM "Ejercicio2_Cesar_Solano.dtd"> 
+<hogwarts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Ejercicio3_Cesar_Solano.xsd" firma="Cesar Solano" enlace="https://www.wizardingworld.com/">
+-->
+<?xml-stylesheet type="text/xsl" href="Ejercicio4_Cesar_Solano.xsl"?>
+<hogwarts firma="Cesar Solano" enlace="https://www.wizardingworld.com/">
+  <casas>
+    <casa escudo="gryffindor.png"/>
+    <casa escudo="ravenclaw.png"/>
+    <casa escudo="hufflepuff.png"/>
+    <casa escudo="slytherin.png"/>
+  </casas>
+  <magos>
+    <mago casa="1" ocupacion="alumno" mote="el niño que sobrevivió">
+      <nombre>Harry Potter</nombre>
+      <nacimiento>1980-07-31</nacimiento>
+      <caracteristicasFisicas>
+        <pelo>negro</pelo>
+        <ojos>verdes</ojos>
+      </caracteristicasFisicas>
+      <caracteristicasMagicas>
+        <patronus>ciervo</patronus>
+        <varita>acebo</varita>
+        <varita>sauco</varita>
+      </caracteristicasMagicas>
+    </mago>
+    <mago casa="1" ocupacion="profesor">
+      <nombre>Albus Dumbledore</nombre>
+      <caracteristicasFisicas>
+        <ojos>azul</ojos>
+      </caracteristicasFisicas>
+      <caracteristicasFisicas>
+        <pelo>plateado</pelo>
+      </caracteristicasFisicas>
+      <caracteristicasMagicas>
+        <patronus>fenix</patronus>
+        <varita>sauco</varita>
+      </caracteristicasMagicas>
+    </mago>
+    <mago casa="2" ocupacion="alumno" mote="Lunatica Lovegood">
+      <nombre>Luna Lovegood</nombre>
+      <caracteristicasFisicas>
+        <pelo>rubio</pelo>
+      </caracteristicasFisicas>
+      <caracteristicasMagicas>
+        <patronus>liebre</patronus>
+      </caracteristicasMagicas>
+    </mago>
+  </magos>
+</hogwarts>

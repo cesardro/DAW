@@ -1,0 +1,39 @@
+table,
+th,
+td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+img {
+    width: 100px;
+    float: left;
+}
+
+td p {
+    margin-top: 10%;
+    text-align: left;
+    width: 100%;
+}
+
+body {
+    text-align: center;
+}
+
+.oscuro {
+    background-color: #73b342;
+    font-weight: bold;
+    color: #9fde70;
+    font-size: 20px;
+}
+
+td {
+    background-color: #9fde70;
+    padding: 10px;
+}
+
+.legenda {
+    margin-top: 3px;
+    color: #73b342;
+    font-weight: bolder;
+}

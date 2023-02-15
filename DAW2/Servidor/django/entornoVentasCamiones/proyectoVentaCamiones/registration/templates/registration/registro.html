@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<style>
+    p{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 30%;
+    }
+    .boton{
+        grid-column: span 2;
+        max-width: 40%;
+        margin: 0 auto;
+    }
+</style>
+<body>
+    <h1>Registro</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <p><input type="submit" value="Registrarme" class="boton"></p>
+    </form>
+</body>
+</html>

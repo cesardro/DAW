@@ -1,0 +1,47 @@
+.contenedor {
+    width: 50%;
+}
+
+.izquierda {
+    float: left;
+}
+.derecha {
+    float: right;
+}
+
+ul {
+    list-style: none;
+}
+
+.titulo {
+    font-size: 25px;
+    position: fixed;
+    max-width: 10%;
+}
+
+.botones {
+    float: right;
+}
+
+.datos {
+    position: relative;
+    left: 40%;
+}
+
+label {
+    margin-bottom: 30px;
+    display: block;
+}
+
+.requerido {
+    color: red;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid red;
+}
+
+.amarillo {
+    background-color: yellow;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+  </head>
+  <body bgcolor="#DAF7A6">
+    <font color="#581845" size="4" face="Georgia">
+      <form class="" action="index.html" method="post" enctype="multipart/form-data">
+        <fieldset>
+          <p>Nombre: <input type="text" name="nombre" placeholder="Introduce tu nombre"></p>
+          <p>Contraseña: <input type="password" name="contraseña" required></p>
+          <p>Descripción: <textarea name="descripcion" rows="5" cols="50" placeholder="Añade tu descripción aquí"></textarea></p>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>¿En qué mes es tú cumpleaños?</legend>
+          <input type="radio" name="mes" value="" checked>Enero <br> <!--Empieza marcado-->
+          <input type="radio" name="mes" value="">Febrero <br>
+          <input type="radio" name="mes" value="">Marzo <br>
+          <input type="radio" name="mes" value="">Abril <br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>¿Qué colores te gustan?</legend>
+          <input type="checkbox" name="check_amarillo" value="">Amarillo <br>
+          <input type="checkbox" name="check_azul" value="">Azul <br>
+          <input type="checkbox" name="check_rojo" value="">Rojo <br>
+          <input type="checkbox" name="check_verde" value="">Verde <br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Comunidades autónomas</legend>
+          <select required class="" name="seleccion comunidades">
+            <option value="" disabled selected hidden>Seleciona...</option>
+            <option value="">Madrid</option>
+            <option value="">Extremadura</option>
+            <option value="">Cataluña</option>
+            <option value="">Galicia</option>
+          </select>
+        </fieldset>
+        <br>
+        <input type="file" name="archivo" value="Adjuntar archivo">
+        <br>
+        <input type="reset" name="borrar" value="Borrar todo">
+        <br>
+        <input type="submit" name="envio" value="Enviar formulario">
+        <br>
+        <input type="button" name="volver" value="Volver">
+        <br>
+
+      </form>
+    </font>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+SELECT emp_no FROM emple WHERE salario<2000
+
+SELECT oficio, salario, fecha_alt FROM emple WHERE comision IS NULL  AND fecha_alt<='11/17/1991' AND oficio='EMPLEADO'
+
+SELECT apellido, salario + comision AS "Sueldo" FROM emple WHERE salario+comision<2000
+
+SELECT DISTINCT oficio FROM emple WHERE dept_no IN (10,20)
+
+SELECT dni FROM notas WHERE nota=8 OR nota=9
+
+SELECT tema FROM libreria WHERE estante='A' AND ejemplares>10
+
+SELECT dni, nombre, apellidos FROM alum0405 WHERE apellidos LIKE '%VIDAL%' AND provincia='CACERES'
+
+SELECT * FROM emple WHERE apellido LIKE 'A%' AND oficio LIKE '%E%'
+
+SELECT ename, sal FROM emp WHERE sal IN (1200, 1600, 2450, 2975)
+
+DESCRIBE emple

@@ -1,0 +1,12 @@
+<!ELEMENT empleados (persona+)>
+<!ELEMENT persona (nombre, nacimiento?, direccion+)>
+<!ATTLIST persona genero (hombre | mujer | noBinario) #REQUIRED>
+<!ELEMENT nacimiento (dia | mes | año)*>
+<!ELEMENT direccion (calle, provincia)>
+<!ATTLIST direccion cp CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT provincia (#PCDATA)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT año (#PCDATA)>

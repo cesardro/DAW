@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Práctica 2 de Indexed DB</title>
+    </head>
+    <style>
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 250px;
+            gap: 10px;
+        }
+        .button {
+            grid-column: span 2;
+            width: 100px;
+            margin: 0 auto;
+        }
+    </style>
+    <body>
+        <div class="contenedor">
+            <label for="v1">ID</label>
+            <input type="text" name="v1" id="valor1" />
+            <label for="v2">Valor 2</label>
+            <input type="text" name="v2" id="valor2" />
+            <label for="v3">Valor 3</label>
+            <input type="text" name="v3" id="valor3" />
+            <button type="button" onclick="guardar()" class="button">Guardar</button>
+            <button type="button" onclick="listar()" class="button">Listado</button>
+        </div>
+        <hr />
+        <div id="salida">
+            <table border="1" id="datos">
+                <tr>
+                    <th>Clave</th>
+                    <th>Valor</th>
+                </tr>
+            </table>
+        </div>
+    </body>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="js/js.js"></script>
+</html>

@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+
+.cabecera {
+    background-color: #ffffe0;
+    width: 860px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.cabecera p{
+    padding-left: 30px;
+}
+
+.menu {
+    background-color: #deb887;
+    width: 150px;
+}
+
+.menu p {
+    padding: 100px 0px;
+    padding-left: 30px;
+}
+
+.principal {
+    background-color: #f5f5dc;
+    width: 510px;
+    position: absolute;
+    top: 78px;
+    left: 150px;
+}
+
+.principal p {
+    padding: 100px 40px;
+}
+
+.lateral {
+    background-color: #7fffd4;
+    width: 200px;
+    position: absolute;
+    top: 78px;
+    left: 660px;
+}
+
+.lateral p {
+    padding: 100px 30px;
+}
+
+.pie {
+    background-color: #ffe4c4;
+    width: 860px;
+}
+
+.pie p {
+    padding: 20px 30px;
+}

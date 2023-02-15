@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE registro_temperatura SYSTEM "casoFinal01.dtd">
+<registro_temperatura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="casoFinal01.xsd">
+  <provincia>Zamora</provincia>
+  <fecha>2022-01-07</fecha>
+  <temperatura_minima>-5</temperatura_minima>
+  <temperatura_maxima>4</temperatura_maxima>
+  <incidencias>
+   <incidencia>
+      <nombre>frio</nombre>
+      <severidad>alta</severidad>
+   </incidencia> 
+   <incidencia>
+      <nombre>nieve</nombre>
+      <severidad>alta</severidad>
+   </incidencia> 
+   <incidencia>
+      <nombre>lluvia</nombre>
+      <severidad>media</severidad>
+   </incidencia>
+  </incidencias>
+</registro_temperatura>

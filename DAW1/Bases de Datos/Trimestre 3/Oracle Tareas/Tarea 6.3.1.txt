@@ -1,0 +1,12 @@
+SELECT count(customerID) "Número", country "País" FROM customer GROUP BY country;
+
+SELECT count(customerID) "Número", country "País" FROM customer GROUP BY country ORDER BY count(customerID) DESC;
+
+SELECT count(customerID) "Número", country "País" FROM customer GROUP BY country HAVING count(customerID)>1;
+
+
+SELECT oficio "Oficio", count(emp_no) "Personas", SUM(salario) "Salario total " FROM emple GROUP BY oficio;
+
+SELECT dept_no "Número Dpta", MAX(salario) "Salario máximo" FROM emple GROUP BY dept_no HAVING AVG(salario)>2000; 
+
+SELECT dept_no "Número Dpta", ROUND(AVG(salario), 2) "Salario medio", MAX(salario) "Salario máximo" FROM emple GROUP BY dept_no HAVING AVG(salario)<2000;

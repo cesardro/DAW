@@ -1,0 +1,35 @@
+.tablero {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background: white;
+    justify-content: center;
+    gap: 30px;
+}
+
+.tablero > div {
+    background-color: white;
+    width: 220px;
+    height: 220px;
+}
+
+.tablero > div > img {
+    padding: 10px;
+    border-radius: 70px;
+    box-shadow: 14px 14px 28px #8E7B7B, -14px -14px 28px #F6D5D5; 
+}
+
+h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-size: 50px;
+}
+
+body {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5%;
+}

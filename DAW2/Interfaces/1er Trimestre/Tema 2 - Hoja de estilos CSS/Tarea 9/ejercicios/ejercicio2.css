@@ -1,0 +1,18 @@
+ul {
+    list-style: none;
+    display: flex;
+    color: red;
+}
+
+li {
+    border-left: 1px solid blue;
+    padding: 0 80px;
+}
+li:last-of-type {
+    border-right: 1px solid blue;
+}
+
+li:hover {
+    background-color: blue;
+    cursor: pointer;
+}

@@ -1,0 +1,59 @@
+div {
+    border: 2px solid black;
+    width: 800px;
+}
+
+li {
+    font-family: sans-serif;
+    list-style: none;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 50px;
+}
+
+.arandanos:hover {
+    cursor: pointer;
+    background-image: url("img/arandano.png");
+    padding-bottom: 140px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 30px;
+    background-color: forestgreen;
+    font-size: 20px;
+}
+
+.platanos:hover {
+    cursor: pointer;
+    background-image: url("img/platano.png");
+    padding-bottom: 140px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 30px;
+    background-color: forestgreen;
+    font-size: 20px;
+}
+
+.fresas:hover {
+    cursor: pointer;
+    background-image: url("img/fresa.png");
+    padding-bottom: 140px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 30px;
+    background-color: forestgreen;
+    font-size: 20px;
+}
+
+.cerezas:hover {
+    cursor: pointer;
+    background-image: url("img/cereza.png");
+    padding-bottom: 140px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 30px;
+    background-color: forestgreen;
+    font-size: 20px;
+}

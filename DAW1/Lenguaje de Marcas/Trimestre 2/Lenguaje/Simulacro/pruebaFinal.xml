@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--<empleados xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Ejercicio03-Simulacro.xsd">-->
+<!DOCTYPE empleados SYSTEM "Ejercicio02-Simulacro.dtd">
+<empleados>
+<!--PERSONA 1 -->
+  <persona genero="hombre">
+    <nombre>Mario Rodriguez</nombre>
+    <direccion cp="28902">
+      <calle>c/ graminias</calle>
+      <provincia>Madrid</provincia>
+    </direccion>
+    <direccion cp="28903">
+      <calle>c/ gardenias</calle>
+      <provincia>Pamplona</provincia>
+    </direccion>
+  </persona>
+  <!--PERSONA 2 -->
+  <persona genero="noBinario">
+    <nombre>Danielle Marquez</nombre>
+    <nacimiento>
+      <mes>septiembre</mes>
+      <dia>01</dia>
+      <año>1990</año>
+    </nacimiento>
+    <direccion cp="28731">
+      <calle>c/ acacia</calle>
+      <provincia>Madrid</provincia>
+    </direccion>
+  </persona>
+  <!--PERSONA 3 -->
+  <persona genero="hombre">
+    <nombre>Javier Gutierrez</nombre>
+    <nacimiento>
+      <año>1989</año>
+      <mes>diciembre</mes>
+      <dia>11</dia>
+    </nacimiento>
+    <direccion cp="28933">
+      <calle>c/ huerta</calle>
+      <provincia>Madrid</provincia>
+    </direccion>
+    <direccion cp="45005">
+      <calle>c/ asturias</calle>
+      <provincia>Toledo</provincia>
+    </direccion>
+  </persona>
+</empleados>

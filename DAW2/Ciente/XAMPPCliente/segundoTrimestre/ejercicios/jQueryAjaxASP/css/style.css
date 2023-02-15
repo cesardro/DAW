@@ -1,0 +1,83 @@
+html,
+body {
+    height: 100%;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+}
+
+.cuerpo {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 80%;
+    padding-top: 5%;
+    margin: 0 auto;
+    gap: 60px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+th {
+    background-color: #55608f;
+}
+
+label {
+    color: white;
+    font-weight: bold;
+}
+
+.contenedorFormulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.botones {
+    padding: 10px;
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    border: 1px solid #55608f;
+    border-radius: 10px;
+    color: white;
+}
+
+.botones:hover {
+    cursor: pointer;
+    background: linear-gradient(45deg, #5f2c82, #49a09d);
+}
+
+button:disabled,
+button[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #444444;
+}
+
+button:hover:disabled,
+button[disabled] {
+    cursor: not-allowed;
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+}
+
+button {
+    grid-column: span 2;
+}

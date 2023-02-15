@@ -1,0 +1,16 @@
+{# esto es un comentario #}
+{% extends "recetario/base.html" %}
+
+{% block contenido %}
+    {% for receta in recetas %}
+    {% if not forloop.first %}<hr>{% endif %}
+        {{receta.nombre}}<br/>
+        {{receta.subnombre}}<br/>
+        {{receta.ingredientes|upper|linebreaks}}<br/>
+        {{receta.receta|linebreaks}}<br/>
+        {{receta.created|date:"SHORT_DATE_FORMAT"}}<br/>
+        {% for categ in receta.categorias.all %}
+            <a href="{% url 'categoria' categ.id %}">{{categ.nombre}}</a> {% if not forloop.last %},{% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endblock %}

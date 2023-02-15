@@ -1,0 +1,27 @@
+body {
+    background-color: #EFD6AC;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.atras:link,
+.atras:visited {
+    background-color: #183A37;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+hr {
+    border: 2px solid #C44900;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}

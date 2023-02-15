@@ -1,0 +1,37 @@
+sudo -i //// 127.0.0.1
+apt-get update
+apt-get install apache2
+apache2 -v
+service apache2 status
+ls /etc/apache2/
+ls /var/www/
+cd /var/www/html
+ls
+mv index.html index-predet.html
+ls
+touch index.html
+nano index.html
+cd .. 
+mkdir site1daw2
+cd /etc/apache2/sites-available
+touch site1daw2.conf
+nano site1daw2.conf
+
+<VirtualHost *:80>
+	ServerName site1daw2.es
+	ServerAdmin root@site1daw2.es
+	ServerAlias www.site1daw2.es
+	DocumentRoot /var/www/site1daw2
+	DirectoryIndex index.html
+</VirtualHost>
+
+a2ensite site1daw2.conf
+ls /etc/apache2/sites-enabled/
+service apache2 reload
+apachectl -S
+nano /etc/hosts
+netstat -tuna
+nano /etc/apache2/ports.com (Listen 8081, tenemos que añadir el puerto si lo hemos creado
+diferente al de 80)
+a2dissite * (Deshabilita todos)
+ifconfig

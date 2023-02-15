@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Curriculum.xsl"?>
+<curriculum>
+  <foto>fotocurriculum.png</foto>
+  <nombre>César</nombre>
+  <apellido>Solano</apellido>
+  <profesion>Desarrollador Web</profesion>
+  <redes linkedin="www.linkedin.com/in/cesardrosolano">622 114 582 | cesardro.98@gmail.com | Madrid, España</redes>
+  <datos>
+    <formacion titulo="FORMACIÓN">
+      <info tituloInfo="Tecnico Superior en Desarrollo de Aplicaciones Web">       
+                  Colegio Bilingüe Valle del Miro - Valdemoro
+                  <años>2021 - Actualidad</años>
+      </info>
+      <info tituloInfo="Bachillerato">
+                  Colegio Ciudad Boquia - Pereira - Colombia
+                  <años>2015</años>
+      </info>
+    </formacion>
+    <experiencia titulo="EXPERIENCIA">
+      <info tituloInfo="Operador de chat en Colombia" link="www.att.com">
+                  <punto>Sales Wireless para ATT Services</punto>
+                  <punto>- Atención al cliente en inglés</punto>
+                  <punto>- POC (Point of Contact) / Soporte de equipo</punto>
+                  <años>Enero 2017 - Enero 2021</años>
+      </info>
+    </experiencia>
+    <aptitudes titulo="APTITUDES">
+      <info tituloInfo="Idiomas">
+                  <punto>Español - nativo</punto>
+                  <punto>Inglés - C1</punto>
+      </info>
+      <info tituloInfo="Ofimática">
+                  <punto>Lenguajes de programación: Java, HTML / CSS y C++</punto>
+                  <punto>IDEs: NetBeans</punto>
+                  <punto>Otros: Microsoft Office (Word, Excel, Power Point...)</punto>
+      </info>
+    </aptitudes>
+    <adicional titulo="ADICIONAL">
+      <info tituloInfo="Información complementaria">
+                  <punto>Carnet de conducir y disponibilidad de coche
+                  propio.</punto>
+      </info>
+    </adicional>
+    <extra>
+      <info fotoAdicional="Pensamiento.png">Computacional</info>
+      <info fotoAdicional="Estandares.png">Codificación</info>
+      <info fotoAdicional="Asertividad.png">Asertividad</info>
+      <info fotoAdicional="Diseño.png">Diseño creativo</info>
+    </extra>
+  </datos>
+</curriculum>

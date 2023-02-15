@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!--Favicon icono que sale arriba-->
+    <link rel="icon" href="url de la imagen">
+  </head>
+  <body>
+    <!-- ETIQUETAS DE TEXTO -->
+    <!-- mucha de estas cosas se pueden hacer con CSS -->
+
+    <!-- HEADERS -->
+    <!-- Desde h1 hasta h6-->
+    <h1>Titulo tipo 1</h1>
+
+    <!-- FORMATO DE TEXTO -->
+    <b>Negrita</b>
+    <i>Cursiva</i>
+    <u>Subraya el texto</u>
+    <del>Tacha el texto</del>
+    <tt>Estilo maquina de escribir</tt>
+    <mark>Subrayador de texto</mark>
+    <sup>superindice</sup>
+    <sub>Subindice</sub>
+    <p>Etiqueta de parrafo</p>
+    <br><!--Salto de linea -->
+
+    <!-- LISTAS -->
+    <!-- Lista no ordenada -->
+    <ul>
+      <li>Cosa 1</li>
+      <li>Cosa 2</li>
+      <li>Cosa 3</li>
+    </ul>
+    <!-- Listas ordenadas -->
+    <!-- Type sirve para el tipo, puede ser numeros (1), letras min (a), letras mayus (A), nº romanos mayus(I), nº romanos min(i) -->
+    <!-- Start sirve para decir donde se quiere empezar -->
+    <ol type="A" start="3">
+      <li>Cosa 1</li>
+      <li>Cosa 2</li>
+      <li>Cosa 3</li>
+    </ol>
+    <!-- Lista de definicion -->
+    <dl class="">
+      <dt>Terminos</dt>
+      <dd>Definiciones</dd>
+    </dl>
+    <!-- Las listas pueden ser anidadas, una lista desordenada puede contenter una lista ordenada etc -->
+
+    <!-- TABLAS -->
+    <!-- Puedes poner bordes con border="2" aunque preferible hacerlo con CSS-->
+    <!-- Tambien se le puede dar un alto y un ancho, preferible con CSS-->
+    <!-- Color de borde bordercolor y color de fondo bgcolor, preferible con CSS -->
+    <table>
+      <caption>TABLA DE EJEMPLO</caption>
+      <tr>
+        <th>Titulo Columna 1</th>
+        <th>Titulo Columna 2</th>
+      </tr>
+      <tr>
+        <td>Columna 1 de la fila 1</td>
+        <td>Columna 2 de la fila 1</td>
+      </tr>
+      <tr>
+        <td>Columna 1 de la fila 2</td>
+        <td>Columna 2 de la fila 2</td>
+      </tr>
+      <tr>
+        <td colspan="2"> Unificamos las dos columnas</td>
+      </tr>
+    </table>
+
+    <!-- FORMULARIOS -->
+    <form class="" action="index.html" method="post">
+      <!-- Texto corto -->
+      <!--Atributos opcionales, maxlength (maximo de caracteres), size(tamaño de la caja en ancho), placeholder(Aparece un texto por defecto),
+      required(obligatorio) -->
+      <label for="">Norbre: </label>
+      <input type="text" name="nombre" value="">
+      <!-- Texto oculto -->
+      <!--Atributos opcionales, maxlength (maximo de caracteres), size(tamaño de la caja en ancho), required(obligatorio) -->
+      <label for="">Contraseña: </label>
+      <input type="password" name="contraseña" value="">
+      <!-- Texto largo -->
+      <!-- Atributos opcionales, rows(lineas de texto que caben), cols(nº de col que se pueden escribir por linea)
+        placeholder(Aparece un texto por defecto), required(obligatorio)-->
+      <label for="">Descipcion</label>
+      <textarea name="Descripcion" rows="8" cols="80"></textarea>
+      <!-- Botones radio -->
+      <!-- name tiene que ser igual para todos los botones para poder seleccionar una sola opcion-->
+      <!-- checked="checked" aparece una opcion ya marcada-->
+      <!-- required(obligatorio)-->
+      <input type="radio" name="" value="">
+      <!-- Cajas de validación -->
+      <!-- name tiene que tener valores distintos -->
+      <!-- checked="checked" aparece una opcion ya marcada-->
+      <!-- required(obligatorio)-->
+      <input type="checkbox" name="">
+      <!-- Boton de envio -->
+      <!-- texto es lo que pone dentro del boton-->
+      <input type="submit" value="texto">
+      <!-- Boton de borrado-->
+      <!-- texto es lo que pone dentro del boton -->
+      <input type="reset" value="borrar todo" id="destino">
+      <!-- Envio de archivos adjuntos -->
+      <!-- se debe incluir en form enctype="multipart/form-data"-->
+      <input type="file" name="archivo" value="texto">
+      <!-- Botones normales-->
+      <input type="button" value="boton normal" name="boton1">
+      <!-- Listas desplegables-->
+      <select name="color" id="">
+        <option disabled selected hidden>Seleccione...</option>
+        <option value="">rojo</option>
+        <option value="">amarillo</option>
+        <option value="">azul</option>
+      </select>
+      <!-- Fieldset Agrupacion de etiquetas -->
+      <fieldset>
+        <legend>datos personales</legend>
+      </fieldset>
+      <!-- Enlances -->
+      <!-- Enlaces externos -->
+      <a href="https://www.crunchyroll.com/es-es/the-night-beyond-the-tricornered-window">Anime</a>
+      <!-- Enlaces locales (que esta en alguna carpeta) -->
+      <a href="ruta"></a>
+      <!-- Enlaces internos (para moverte por el html)-->
+      <!-- Usas ids-->
+      <a href="#destino"></a>
+      <!-- Imagenes -->
+      <!-- atributos: autoplay, controls. loop, autobuffer (el archivo tiene que descargarse antes de reproducirse)-->
+      <img src="url de la imagen" alt="texto_explicativo">
+      <!-- Video -->
+      <video src="url del video"></video>
+      <!-- Audio -->
+      <audio src="url del audio"></audio>
+      <!-- div es de bloque -->
+      <div>
+        <!-- pones cosas dento, una caja contenedora-->
+      </div>
+      <!-- Span es en linea-->
+      <span><p>Caja colocadora </p></span><p>en linea</p>
+    </form>
+  </body>
+</html>

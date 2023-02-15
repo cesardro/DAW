@@ -1,0 +1,9 @@
+<!ELEMENT expedientes (expediente+)>
+<!ELEMENT expediente (titulacion, estudiante, modulos)>
+<!ELEMENT titulacion (#PCDATA)>
+<!ELEMENT estudiante (#PCDATA)>
+<!ELEMENT modulos (modulo+)>
+<!ELEMENT modulo (nombre, aprobado, curso)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT aprobado (#PCDATA)>
+<!ELEMENT curso (#PCDATA)>

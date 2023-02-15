@@ -1,0 +1,13 @@
+SELECT MIN(price) FROM products_fun
+
+SELECT MAX(price) FROM products_fun
+
+SELECT COUNT(*) FROM products_fun WHERE price<25
+
+SELECT AVG(price) FROM products_fun
+
+SELECT productname FROM products_fun WHERE categoryid=2
+
+SELECT COUNT(DISTINCT categoryid) FROM products_fun
+
+SELECT productname FROM products_fun WHERE supplierid=3

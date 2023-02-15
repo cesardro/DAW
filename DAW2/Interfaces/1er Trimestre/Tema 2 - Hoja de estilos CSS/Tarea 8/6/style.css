@@ -1,0 +1,23 @@
+body {
+    background-color: gray;
+    margin: 0;
+}
+
+.superior {
+    background-color: black;
+    color: white;
+    padding-bottom: 30px;
+    margin: ;
+}
+
+.lateral {
+    background-color: yellow;
+    position: fixed;
+    left: 400px;
+    width: 100%;
+}
+
+.lateral p {
+    padding-left: 300px;
+    padding-top: 80px;
+}

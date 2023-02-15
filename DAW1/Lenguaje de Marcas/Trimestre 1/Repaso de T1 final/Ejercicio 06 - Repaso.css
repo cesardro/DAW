@@ -1,0 +1,29 @@
+*{
+  background-color: #f5f5dc;
+}
+
+table{
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+caption{
+  text-decoration-line: overline;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.dias{
+  font-weight: bold;
+}
+
+td{
+  border-bottom: 1px solid black;
+}
+
+div{
+  padding: 100px 200px;
+  margin: 100px 300px;
+  border: 1px solid black;
+}

@@ -1,0 +1,58 @@
+a)
+
+El orden de insercción en las tablas sería:
+plan_estudios -> profesor -> id_asignatura -> imparte.
+
+b)
+
+INSERT INTO plan_estudios VALUES(1, '01/01/2019');
+INSERT INTO plan_estudios VALUES(2, '01/01/2020');
+INSERT INTO plan_estudios VALUES(3, '01/01/2021');
+
+c)
+
+INSERT INTO profesor VALUES('123456789', 'Maria', 'Martinez', 'Perez', 'Calle Velazquez');
+INSERT INTO profesor VALUES('789456123', 'Laura', 'Perez', 'Martinez', 'Calle Serrano');
+INSERT INTO profesor VALUES('456789123', 'Juan', 'Martinez', 'Perez', 'Calle Alcala');
+INSERT INTO profesor VALUES('147852369', 'Antonio', 'Perez', 'Martinez', 'Calle Mayor');
+
+d)
+
+INSERT INTO asignatura VALUES(1, 'Lengua', 'CURSO1', 1, '123456789');
+INSERT INTO asignatura VALUES(2, 'Matematicas', 'CURSO2', 2, '789456123');
+INSERT INTO asignatura VALUES(3, 'Fisica', 'CURSO3', 2, '456789123');
+INSERT INTO asignatura VALUES(4, 'Quimica', 'CURSO3', 3, '147852369');
+
+e)
+
+INSERT INTO imparte(id_asignatura, dni_profesor) VALUES(1, '123456789');
+INSERT INTO imparte VALUES(2, '789456123');
+INSERT INTO imparte(dni_profesor, id_asignatura) VALUES('456789123', 3);
+INSERT INTO imparte(dni_profesor, id_asignatura) VALUES('147852369', 3);
+INSERT INTO imparte VALUES(4, '147852369');
+
+f)
+
+UPDATE profesor SET direccion='Calle Arenal' WHERE dni='789456123';
+
+g)
+
+UPDATE profesor SET apellido2='Ramirez';
+
+h)
+
+DELETE FROM imparte WHERE id_asignatura=4;
+
+i)
+
+TRUNCATE TABLE profesor;
+
+j)
+
+DROP TABLE profesor;
+
+k)
+
+Dan error ya que esta tabla esta siendo referenciada desde otras tablas, 
+esto significa que hay otras tablas que estan usando a profesor para obtener 
+información.

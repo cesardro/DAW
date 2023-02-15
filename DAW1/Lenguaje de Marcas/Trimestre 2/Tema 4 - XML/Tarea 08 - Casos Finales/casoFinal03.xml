@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE pedidos SYSTEM "casoFinal03.dtd"> -->
+<pedidos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="casoFinal03.xsd">
+
+  <pedido>
+   <empresa>2113</empresa>
+   <productos>Peras</productos>
+   <fecha>7/10/2019</fecha>
+   <factura numfactura="A1" cliente_factura="asdr">
+      <emisor>Noelia</emisor>
+      <total>192</total>
+      <fecha_fact>7/10/2019</fecha_fact>
+   </factura>
+  </pedido>
+  
+  <pedido>
+    <cliente NIF="253">
+      <MOTE>Jaimito</MOTE>
+    </cliente>
+    <productos>Manzanas</productos>
+    <fecha>9/8/2019</fecha>
+    <factura numfactura="A2" cliente_factura="tges">
+      <emisor>Pepa</emisor>
+      <total>322</total>
+      <fecha_fact>9/8/2019</fecha_fact>
+    </factura>
+  </pedido>
+  
+</pedidos>

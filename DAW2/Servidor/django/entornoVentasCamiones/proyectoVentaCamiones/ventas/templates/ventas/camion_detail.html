@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Detalle camión</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'camiones/css/estilos.css' %}">
+    </head>
+    <body>
+        <h1>Detalle de {{camion.titulo}}</h1>
+        <p>Marca: {{camion.marca}}</p>
+        <p>Modelo: {{camion.modelo}}</p>
+        <p>Descripción: {{camion.descripcion|linebreaks}}</p>
+        <p>Precio: {{camion.precio}} EUR</p>
+        <p>KM: {{camion.kilometros}} KM</p>
+        <p>Fecha publicado: {{camion.created}}</p>
+        <p>Última fecha actualizado: {{camion.updated}}</p>
+        <p>Subido por: {{camion.author}}</p>
+        <p>Imagen:<br><img src="/media/{{camion.imagen}}" alt="Imagen"></p>
+        <h3>Categorias</h3>
+        {% for e in camion.categorias.all %}
+            <p>{{e.nombre}}</p>
+        {% endfor %}
+        <a href = "{% url 'listado' %}"><button>Atrás</button></a>
+        {% include 'ventas/includes/camiones_updatemodif.html' %}
+    </body>
+</html>

@@ -1,0 +1,18 @@
+SELECT oficinas.oficina, ciudad, numemp, nombre FROM oficinas, empleados1 WHERE oficinas.oficina=empleados1.oficina AND region='este';
+
+SELECT oficinas.oficina, ciudad, numemp, nombre FROM oficinas, empleados1 WHERE oficinas.oficina=empleados1.oficina(+) AND empleados1.oficina is NULL AND region='este';
+
+~~ FORMA FEA DE JORGE ~~
+SELECT oficinas.oficina, ciudad, numemp, nombre FROM oficinas LEFT JOIN empleados1 ON oficinas.oficina=empleados1.oficina WHERE empleados1.oficina is NULL AND region='este';
+
+SELECT pedidos.numpedido, pedidos.importe, clientes.nombre, clientes.limitecredito FROM pedidos INNER JOIN clientes ON clientes.numclie=pedidos.clie;
+
+SELECT empleados1.nombre, oficinas.ciudad, oficinas.region FROM oficinas RIGHT JOIN empleados1 ON oficinas.oficina=empleados1.oficina;
+
+SELECT oficinas.oficina, empleados1.nombre FROM oficinas INNER JOIN empleados1 ON oficinas.oficina=empleados1.oficina WHERE oficinas.objetivo>600000  AND empleados1.titulo='dir ventas';
+
+SELECT empleados1.nombre, empleados1.contrato, pedidos.fechapedido FROM empleados1 INNER JOIN pedidos ON pedidos.rep=empleados1.numemp WHERE empleados1.contrato=pedidos.fechapedido;
+
+SELECT empleados1.nombre "Nombre empleado", empleados1.cuota "Cuota empleado", jefe.cuota "Cuota jefe" FROM empleados1 INNER JOIN empleados1 JEFE ON empleados1.jefe=jefe.numemp AND empleados1.cuota>jefe.cuota
+
+SELECT DISTINCT empleados1.numemp "Codigo", empleados1.nombre FROM empleados1 INNER JOIN pedidos ON pedidos.rep=empleados1.numemp WHERE pedidos.importe>10000 OR empleados1.cuota<10000;

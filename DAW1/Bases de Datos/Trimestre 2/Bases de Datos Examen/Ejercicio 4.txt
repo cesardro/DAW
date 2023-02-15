@@ -1,0 +1,20 @@
+a)
+
+SELECT nombre FROM profesor WHERE nombre='Pedro';
+
+b)
+
+SELECT nombre FROM profesor WHERE nombre='Maria' AND (apellido1='Pérez' OR apellido1='Martinez');
+
+c)
+
+SELECT nombre FROM asignatura WHERE nombre LIKE'%a';
+
+d)
+
+SELECT 'La asignatura: ' || 
+       nombre || 
+       ' que se da en el curso ' || 
+       curso || 
+       ' es coordinada por el profesor con DNI ' || 
+       coordinador_dni "Frase "FROM asignatura;

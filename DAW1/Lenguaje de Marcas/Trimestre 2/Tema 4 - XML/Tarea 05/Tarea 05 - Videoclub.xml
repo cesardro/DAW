@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alquiler[
+  <!ELEMENT alquiler (peliculas?)>
+  <!ATTLIST alquiler 
+                        codigo ID #REQUIRED
+                        fecha CDATA #IMPLIED>
+  <!ELEMENT peliculas (pelicula+)>
+  <!ATTLIST pelicula
+                        id_pelicula ID #REQUIRED
+                        caratula NMTOKEN #IMPLIED
+                        titulo CDATA #IMPLIED
+                        genero (Comedia | Thriller | Drama | Accion) #REQUIRED
+                        duracion CDATA "100min">
+  <!ELEMENT pelicula (actor | actriz)*>
+  <!ELEMENT actor EMPTY>
+  <!ELEMENT actriz EMPTY>
+  <!ATTLIST actor
+                        nombre NMTOKENS #REQUIRED
+                        apellido NMTOKENS #IMPLIED>
+  <!ATTLIST actriz
+                        nombre NMTOKENS #REQUIRED
+                        apellido NMTOKENS #IMPLIED>
+]>
+
+<alquiler codigo="C9" fecha="21/01/2022">
+   <peliculas>
+     <pelicula id_pelicula="Z102" titulo="Eternals" genero="Accion" duracion="">
+        <actriz nombre="Angelina" apellido="Jolie" />
+        <actor nombre="Harry" apellido="Styles" />
+        <actor nombre="Kit" apellido="Harrington" />
+        <actriz nombre="Salma" apellido="Hayek" />
+        <actor nombre="Barry" apellido="Keoghan" />
+      </pelicula>
+      <pelicula id_pelicula="T01" titulo="Jumper" genero="Accion" duracion="88min">
+        <actor nombre="Hayden" apellido="Christensen"/>
+        <actriz nombre="Rachel" apellido="Bilson"/>
+      </pelicula>
+      <pelicula id_pelicula="R1000" caratula="foto.png" titulo="Mi vecino Totoro" genero="Comedia" duracion="86min">
+          <actriz nombre="Dakota" apellido="Fanning"/>
+          <actor nombre="Tim" apellido="Daly"/>
+      </pelicula>
+   </peliculas>
+  </alquiler>

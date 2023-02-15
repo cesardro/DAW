@@ -1,0 +1,10 @@
+<!ELEMENT personajeHistorico (nombre, imagen, datosPersonales, enlace)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT datosPersonales (nacimiento, fallecimiento?, ocupaciones, descripcion)>
+<!ELEMENT nacimiento (#PCDATA)>
+<!ELEMENT fallecimiento (#PCDATA)>
+<!ELEMENT ocupaciones (ocupacion+)>
+<!ELEMENT ocupacion (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT enlace (#PCDATA)>

@@ -1,0 +1,23 @@
+input{
+  display: block;
+  margin-bottom: 15px;
+}
+
+select{
+  display: block;
+  margin-bottom: 15px;
+}
+
+textarea{
+  display: block;
+  margin-bottom: 15px;
+}
+
+#estoEnLinea{
+  display: inline;
+  margin-bottom: 0px;
+}
+
+fieldset{
+  margin-right: 75%;
+}

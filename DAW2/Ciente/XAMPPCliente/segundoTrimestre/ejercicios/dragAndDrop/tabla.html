@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tabla con celdas arrastrables</title>
+        <script src="js/dadTabla.js"></script>
+        <link rel="stylesheet" href="css/styleTabla.css" />
+    </head>
+    <body>
+        <table class="tabla">
+            <tr>
+                <td id="arrastrableA1" draggable="true" ondragstart="arrastrando(event)" ondragend="finArrastre(event)">
+                    A1
+                </td>
+                <td id="arrastrableB1" draggable="true" ondragstart="arrastrando(event)" ondragend="finArrastre(event)">
+                    B1
+                </td>
+                <td id="arrastrableC1" draggable="true" ondragstart="arrastrando(event)" ondragend="finArrastre(event)">
+                    C1
+                </td>
+            </tr>
+            <tr>
+                <td id="arrastrableA2" draggable="true" ondragstart="arrastrando(event)" ondragend="finArrastre(event)">
+                    B2
+                </td>
+                <td id="arrastrableB2" draggable="true" ondragstart="arrastrando(event)" ondragend="finArrastre(event)">
+                    C2
+                </td>
+                <td id="arrastrableC2" draggable="true" ondragstart="arrastrando(event)" ondragend="finArrastre(event)">
+                    A2
+                </td>
+            </tr>
+            <tr>
+                <td id="arrastrableA3" draggable="true" ondragstart="arrastrando(event)" ondragend="finArrastre(event)">
+                    A3
+                </td>
+                <td id="arrastrableB3" draggable="true" ondragstart="arrastrando(event)" ondragend="finArrastre(event)">
+                    B3
+                </td>
+                <td id="arrastrableC3" draggable="true" ondragstart="arrastrando(event)" ondragend="finArrastre(event)">
+                    C3
+                </td>
+            </tr>
+        </table>
+        <table class="tabla">
+            <tr id="destino1" ondragover="llego(event)" ondrop="solto(event)"></tr>
+            <tr id="destino2" ondragover="llego(event)" ondrop="solto(event)"></tr>
+            <tr id="destino3" ondragover="llego(event)" ondrop="solto(event)"></tr>
+        </table>
+    </body>
+</html>

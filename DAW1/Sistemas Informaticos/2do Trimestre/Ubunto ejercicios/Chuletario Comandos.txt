@@ -1,0 +1,72 @@
+ccccccdcd (nombre carpeta)-> Moverte a una dirección.
+cd -> Te devuelve a la carpeta anterior.
+pwd -> Te dice donde estas.
+ls -> Te da la información de los FILES.
+ls -l -> Mostrar permisos.
+ls -la -> Mostrar permisos ocultos.
+ls -a -> Muestra archivos ocultos.
+ls e* -> Todos los ficheros y archivos de la raiz. 
+mkdir -> Crea un directorio.
+rm -r -> Para borrar carpetas y/o contenido dentro de forma recursiva.
+touch -> Crear fichero vacio.
+nano -> Modificar el fichero.
+cat -> Ver lo que has escrito en el fcd ichero.
+mv -> Cambiar el nombre del fichero/directorio o mover.
+sudo -> Activar modo admin.
+cp -r "NombreDelFichero" (NuevoNombreDelFichero ó DirecciónDondeQuieresQueSeCopie) -> Te permite copiar un fichero.
+sudo install tree -> Instala un arbol para verlo de forma un poco mas grafica. 
+sudo adduser "nombre" -> Añade un usuario.
+sudo addgroup "nomre" -> Añade un grupo.
+sudo usermod -g "grupo" "usuario" -> Añadir un usuario a un grupo y que sea dueño.
+sudo adduser "usuario" "grupo" -> Para añadir un usuario a un grupo (multiple).
+su "nombre" -> Cambiar de usuario.
+sudo chown "usuario" "nomFichero" -> Cambiar dueño a un fichero.
+sudo chgrp "grupo" "nomFichero" -> Asignar otro dueño de grupo a un fichero.
+sudo chmod [u Usuario, g Grupo, o Otros]+tipoPermiso -> Cambiar tipo de permiso.
+sudo chmod numerico "nomFichero" -> Cambiar tipo de permiso con numerico.
+4 Lectura r
+2 Escritura w
+1 Ejecución x
+exit -> Salir de ese usuario
+sudo su - -> Modo sudo raiz.
+adduser XXX sudo -> Añades el usuario a la raiz.
+sudo chmod 1XXX YYYY -> Permiso especial para proteger una carpeta y sola puedo ser borrada por usuario sudo.
+4 setuid s propietario
+2 setgid s grupo
+1 sticky bit t otros
+Se pone s/t minuscula si es la combinacion con x, si no, seria mayuscula.
+setfacl -m (modify) // Ej: sudo setfacl -m g:alumnos:r examen1 -> Modifica la lista de control de acceso = crear.
+setfacl -x (remove) -> Elimina las entradas.
+getfacl examen1 -> Da la informacion de permisos mas detallada.
+grep XXX -> Que contengan algo.
+sort -> Ordenar en alfabetico.
+>> añade
+> superpone
+fdisk -l -> Ver particiones
+sudo fdisk /dev/sdb -> Opciones del disco
+n -> particiones
+p -> ver las particiones
+w -> guardar y salir
+ls | grep XXX -> filtrar por X palabras
+df -h -> ver monturas
+sudo mkfs.ext4 DISCO -> Formatear un disco
+sudo mount /dev/sbd fichero a montar -> Monta un disco en un fichero.
+sudo nano /etc/fstab -> para que sea permanente
+EJ:
+/dev/sdb1	/tarea10	ext4	defaults	0	0
+Darle permisos 777 al fichero montado.
+Examen:
+Caso particular de X empresa basada en Linux.
+Particion de 5GB a un disco de 10GB, primera particion montarlo sobre un directorio, y lo mismo con la segunda particion
+Meterse con X usuario y crear archivos.
+Redireccionamiento tipo error 2>.
+
+apt-get install quota
+
+mount -o remount DIRECTORIO -> para remontar y se apliquen las quotas.
+quotacheck -cvum DIRECTORIO -> check.
+quotacheck -cug DIRECTORIO -> crear el quota group.
+quotaon -v DIRECTORIO -> Activar quotas
+edquota -u USUARIO -> poner quota para un usuario.
+edquota -g GRUPO -> poner quota a un grupo.
+quota USUARIO -> Informacion del usuario y warnings.

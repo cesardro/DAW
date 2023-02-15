@@ -1,0 +1,69 @@
+*{
+  font-family: Arial;
+  font-size: 72px;
+  color: orange;
+  background-color: yellow;
+}
+div.cabecera{
+  border-width: 10px 2px;
+  border-style: dotted solid solid;
+  border-color: red;
+
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+  margin-left: 7px;
+
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 12px;
+
+  background-color: #B56BFF;
+}
+
+div.cuerpo{
+  border-top: 5px black solid;
+  border-right: 10px dashed grey;
+  border-bottom: 5px pink dotted;
+  border-left: 10px dashed blue;
+
+  margin: 10px 25px;
+
+  padding: 20px 500px;
+
+  background-color: #F32891;
+
+
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/245/498/403/digital-space-universe-4k-8k-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+ div.pie{
+   border: 7px double green;
+
+   margin: 50px;
+
+   padding: 25px;
+
+   background: yellow url(https://envato-shoebox-0.imgix.net/eb12/33b9-5ccc-41fe-8fc6-13e8ac486be1/25620911-SIR00275.JPG?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=700&s=5fc8fbf81e76c6bdb789fc1edd9cbf66) center no-repeat;
+
+ }
+
+ table{
+   width: 100%;
+ }
+
+ #c1{
+   width: 40%;
+   background-color: pink;
+ }
+
+ #c2{
+   background-color: black;
+   width: 60%;
+ }
+ #c3{
+   background-color: blue;
+   width: 50%;
+ }
