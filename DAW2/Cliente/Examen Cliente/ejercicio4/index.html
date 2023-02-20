@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ejercicio 4</title>
+    </head>
+    <body>
+        <label for="Nombre">Nombre</label>
+        <input type="text" name="Nombre" id="nombre" />
+        <label for="empresa">Empresa</label>
+        <input type="text" name="empresa" id="empresa" />
+        <label for="cargo">Cargo</label>
+        <input type="text" name="cargo" id="cargo" />
+        <label for="telefono">Telefono</label>
+        <input type="text" name="telefono" id="telefono" />
+        <label for="correo">Correo</label>
+        <input type="text" name="correo" id="correo" />
+        <button type="button" onclick="guardar()">Guardar</button>
+        <input type="text" name="buscarEmpresa" id="buscarEmpresa" />
+        <button type="button" onclick="buscarEmpresa()">BUSCAR</button>
+        <table border="1" id="listado">
+            <tr>
+                <th>Nombre</th>
+                <th>Empresa</th>
+                <th>Cargo</th>
+                <th>Telefono</th>
+                <th>Correo</th>
+                <th>Del</th>
+            </tr>
+        </table>
+    </body>
+    <script type="text/javascript" src="jquery-3.6.1.js"></script>
+    <script type="text/javascript" src="ejercicio4y5.js"></script>
+</html>

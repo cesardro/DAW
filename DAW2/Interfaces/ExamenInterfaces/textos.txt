@@ -1,0 +1,29 @@
+/*TEXTO LARGO*/
+
+Los Vengadores fueron un equipo compuesto por personas extraordinarias,
+ individuos alterados u otras características especiales, que se encargaba
+ de proteger la Tierra de las amenazas internacionales o alienígenas.
+ Aunque principalmente estaban afiliados a los Estados Unidos, trabajaron
+ teniendo en cuenta los intereses pacíficos del mundo en lugar de un país
+ u organización en específico. Fueron reunidos por Nicholas Fury y
+ S.H.I.E.L.D. a través de la Iniciativa Vengadores para que sean liderados
+ por Steven Rogers y detengan la Invasión Chitauri de Loki, a quien
+ vencieron en la Batalla de Nueva York, antes de tomar caminos separados.
+
+/*TEXTO IRON MAN*/
+
+Tony es un caprichoso multimillonario y genio inventor de la
+ inteligencia artificial Jarvis. Es el heredero de Stark Industries
+ y de una tecnología revolucionaria que aplica en su propio traje.
+
+/*TEXTO CAPITAN AMERICA*/
+
+Rogers era un soldado flacucho de corazón puro en la Segunda
+ Guerra Mundial que, a través de un suero especial, terminó
+ convertido en una especie de súper guerrero.
+
+/*TEXTO HULK*/
+
+Banner es un brillante científico bioquímico y experto en física
+ molecular. También es un gigante verde de fuerza desconocida
+ cuando se enfada.

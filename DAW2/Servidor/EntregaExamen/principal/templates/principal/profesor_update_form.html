@@ -1,0 +1,12 @@
+{% extends "principal/base.html" %}
+{% load static %}
+{% block titulo %}Modifica profesor{% endblock %}
+{% block contenido %}
+<div class="form">
+    <form method="post">
+        <h1>MODIFICA PROFESOR</h1>
+        {% csrf_token %} {{form}}
+        <input type="submit" value="Guardar" />
+    </form>
+</div>
+{% endblock %}

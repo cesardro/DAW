@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Técnico DAW - Desarrollo de Aplicaciones Web</title>
+    </head>
+    <!--Se añade un style en el cual cambiamos la letra para ser mas legible y su tamaño para poder verla mejor.
+    La tabla le ponemos bordes para que se pueda leer mejor la informacion y ver que casilla pertenece a cada elemento
+  tambien añadimos en los botones un cursor pointer para hacer entender al usuario que esta encima del boton
+y cambiamos tambien su color para hacer mejor referencia de ello.
+
+Movemos la imagen a la izquierda para que no ocupe todo el espacio y se vea como un logotipo de la informacion
+mostrada.-->
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+        }
+        .header {
+            display: flex;
+            gap: 20px;
+        }
+        img {
+            max-width: 80px;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            border: 2px solid black;
+            max-width: 50%;
+        }
+        th,
+        td {
+            border: 2px solid black;
+            padding: 5px;
+        }
+        .boton:hover {
+            cursor: pointer;
+            background-color: lightgrey;
+        }
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            gap: 10px;
+            padding-left: 10px;
+        }
+    </style>
+    <body>
+        <div class="header">
+            <!--Se añade titulo que describa el contenido de la página.-->
+            <h1>Técnico DAW - Desarrollo de Aplicaciones Web</h1>
+            <!--Se añade nombre a la imagen para saber de que trata.-->
+            <img src="logotipo.jpg" alt="Logo de DAW" />
+        </div>
+        <!--Editamos un poco el texto para que sea mas comprensible.-->
+        <p>
+            El Técnico DAW es un profesional capaz de desarrollar, implantar y mantener aplicaciones web con
+            independencia del modelo empleado y utilizando tecnologías específicas, garantizando el acceso a los datos
+            de forma segura y cumpliendo los criterios de accesibilidad, usabilidad y calidad exigidas en los estándares
+            establecidos.
+        </p>
+        <!--Se pone un titulo mas comprensible.-->
+        <h2>Información y módulos profesionales</h2>
+        <!--Cambiamos las etiquetas strong para añadirlas con css.-->
+        <table border="1">
+            <tr>
+                <th>Código del Ciclo</th>
+                <td>IFCS03</td>
+            </tr>
+            <tr>
+                <th>Duración</th>
+                <td>2000 horas, 2 cursos académicos, incluida la F.C.T.</td>
+            </tr>
+            <tr>
+                <th>Curso 1º</th>
+                <td>
+                    Formación y orientación laboral / Sistemas informáticos / Bases de datos / Programación / Lenguajes
+                    de marcas y sistemas de gestión de información / Entornos de desarrollo
+                </td>
+            </tr>
+            <tr>
+                <th>Curso 2º</th>
+                <td>
+                    Desarrollo web en entorno cliente / Desarrollo web en entorno servidor / Despliegue de aplicaciones
+                    web / Diseño de interfaces WEB / Inglés técnico para grado superior / Empresa e iniciativa
+                    emprendedora/ Proyecto de desarrollo de aplicaciones web / Formación en Centros de Trabajo (F.C.T.)
+                </td>
+            </tr>
+        </table>
+        <!--Añadimos titulo para hacer referencia al formulario.-->
+        <h2>Formulario de contacto</h2>
+        <!--Cambiamos etiquetas P por labels para que se pueda referenciar a los campos input.-->
+        <form method="post" class="formulario">
+            <label for="nombre">Nombre del interesado:</label>
+            <input type="text" name="nombre" id="nombre" required />
+            <label for="lugar">Lugar de procedencia:</label>
+            <input type="text" name="lugar" id="lugar" />
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" required />
+            <input type="reset" value="Borrar" class="boton" />
+            <input type="submit" value="Enviar" class="boton" />
+        </form>
+    </body>
+</html>

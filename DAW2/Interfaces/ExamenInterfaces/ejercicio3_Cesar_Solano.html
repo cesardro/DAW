@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ejercicio 3</title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+        }
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .header {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            background-color: #007bff;
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
+        .header p {
+            grid-column: 2/3;
+        }
+        .header img {
+            width: 80px;
+        }
+        .izquierda {
+            background-color: #6c757d;
+            color: white;
+        }
+        .centro {
+            background-color: #ffc107;
+            text-align: justify;
+            padding: 10px;
+            padding-top: 0px;
+        }
+        .derecha {
+            background-color: #dc3545;
+            margin: 0 auto;
+            text-align: center;
+            grid-column: 1/3;
+        }
+        .derechaArriba img {
+            margin-top: 10px;
+            width: 95%;
+        }
+        .derechaAbajo {
+            background-color: #17a2b8;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            margin: 10px;
+            text-align: center;
+            margin-top: 0px;
+        }
+        .derechaAbajo div {
+            border: 1px solid black;
+            height: 100%;
+            text-align: center;
+        }
+        @media (min-width: 494px) {
+            .derechaAbajo {
+                background-color: #17a2b8;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                margin: 10px;
+                text-align: center;
+                margin-top: 0px;
+            }
+            .header {
+                display: grid;
+                grid-template-columns: 1fr 4fr;
+                background-color: #007bff;
+                width: 100%;
+                color: white;
+                text-align: center;
+            }
+            .header p {
+                grid-column: 2/3;
+            }
+        }
+        @media (min-width: 768px) {
+            .header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                background-color: #007bff;
+                width: 100%;
+                color: white;
+            }
+            .contenedor {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .derecha {
+                grid-column: 3/4;
+            }
+            .derechaAbajo {
+                background-color: #17a2b8;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                margin: 10px;
+                text-align: center;
+                margin-top: 0px;
+            }
+            .derechaAbajo div {
+                border: 1px solid black;
+                height: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+    <body>
+        <header>
+            <div class="header">
+                <img src="logo.ico" alt="" />
+                <h1>LOS VENGADORES</h1>
+                <p>Realizado por CesarSolano</p>
+            </div>
+        </header>
+        <div class="contenedor">
+            <div class="izquierda">
+                <ul>
+                    <li>Iron Man</li>
+                    <li>Hulk</li>
+                    <li>Capitán América</li>
+                    <li>Viuda Negra</li>
+                    <li>Thor</li>
+                </ul>
+            </div>
+            <div class="centro">
+                <p>
+                    Los Vengadores fueron un equipo compuesto por personas extraordinarias, individuos alterados u otras
+                    características especiales, que se encargaba de proteger la Tierra de las amenazas internacionales o
+                    alienígenas. Aunque principalmente estaban afiliados a los Estados Unidos, trabajaron teniendo en
+                    cuenta los intereses pacíficos del mundo en lugar de un país u organización en específico. Fueron
+                    reunidos por Nicholas Fury y S.H.I.E.L.D. a través de la Iniciativa Vengadores para que sean
+                    liderados por Steven Rogers y detengan la Invasión Chitauri de Loki, a quien vencieron en la Batalla
+                    de Nueva York, antes de tomar caminos separados.
+                </p>
+            </div>
+            <div class="derecha">
+                <div class="derechaArriba"><img src="vengadores.jpg" alt="" /></div>
+                <div class="derechaAbajo">
+                    <div>
+                        <img src="ironman1.png" alt="" />
+                        <p>
+                            Tony es un caprichoso multimillonario y genio inventor de la inteligencia artificial Jarvis.
+                            Es el heredero de Stark Industries y de una tecnología revolucionaria que aplica en su
+                            propio traje.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="hulk1.png" alt="" />
+                        <p>
+                            Banner es un brillante científico bioquímico y experto en física molecular. También es un
+                            gigante verde de fuerza desconocida cuando se enfada.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="capitan1.png" alt="" />
+                        <p>
+                            Rogers era un soldado flacucho de corazón puro en la Segunda Guerra Mundial que, a través de
+                            un suero especial, terminó convertido en una especie de súper guerrero.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+{% extends "principal/base.html" %}
+{% load static %}
+{% block titulo %}Borrar Profesor{% endblock %}
+{% block contenido %}
+<form method="post">
+    {% csrf_token %}
+    <p>¿Estás seguro de que quieres borrar "{{profesor.nombre}}"?</p>
+    {{form}}
+    <input type="submit" value="Confirmar" />
+</form>
+{% endblock %}
